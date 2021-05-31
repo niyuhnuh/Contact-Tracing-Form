@@ -36,20 +36,25 @@ namespace Contact_Tracing_Form
             this.cmb_Day = new System.Windows.Forms.ComboBox();
             this.cmb_Month = new System.Windows.Forms.ComboBox();
             this.cmb_Year = new System.Windows.Forms.ComboBox();
-            this.txtbx_Name = new System.Windows.Forms.TextBox();
+            this.txtbx_LName = new System.Windows.Forms.TextBox();
             this.txtbx_Address = new System.Windows.Forms.TextBox();
             this.lbl_Contact = new System.Windows.Forms.Label();
             this.txtbx_Contact1 = new System.Windows.Forms.TextBox();
             this.txtbx_Contact2 = new System.Windows.Forms.TextBox();
             this.lbl_Gender = new System.Windows.Forms.Label();
             this.txtbx_Gender = new System.Windows.Forms.TextBox();
+            this.lbl_Time = new System.Windows.Forms.Label();
+            this.txtbx_Time = new System.Windows.Forms.TextBox();
+            this.cmb_AMPM = new System.Windows.Forms.ComboBox();
+            this.lbl_FName = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbl_Title
             // 
             this.lbl_Title.AutoSize = true;
             this.lbl_Title.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_Title.Location = new System.Drawing.Point(49, 29);
+            this.lbl_Title.Location = new System.Drawing.Point(49, 22);
             this.lbl_Title.Name = "lbl_Title";
             this.lbl_Title.Size = new System.Drawing.Size(374, 41);
             this.lbl_Title.TabIndex = 0;
@@ -59,11 +64,11 @@ namespace Contact_Tracing_Form
             // 
             this.lbl_Name.AutoSize = true;
             this.lbl_Name.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_Name.Location = new System.Drawing.Point(111, 108);
+            this.lbl_Name.Location = new System.Drawing.Point(66, 111);
             this.lbl_Name.Name = "lbl_Name";
-            this.lbl_Name.Size = new System.Drawing.Size(69, 22);
+            this.lbl_Name.Size = new System.Drawing.Size(114, 22);
             this.lbl_Name.TabIndex = 1;
-            this.lbl_Name.Text = "Name:";
+            this.lbl_Name.Text = "Last Name:";
             // 
             // lbl_Address
             // 
@@ -110,12 +115,12 @@ namespace Contact_Tracing_Form
             this.cmb_Year.Size = new System.Drawing.Size(56, 23);
             this.cmb_Year.TabIndex = 6;
             // 
-            // txtbx_Name
+            // txtbx_LName
             // 
-            this.txtbx_Name.Location = new System.Drawing.Point(191, 111);
-            this.txtbx_Name.Name = "txtbx_Name";
-            this.txtbx_Name.Size = new System.Drawing.Size(232, 23);
-            this.txtbx_Name.TabIndex = 7;
+            this.txtbx_LName.Location = new System.Drawing.Point(191, 111);
+            this.txtbx_LName.Name = "txtbx_LName";
+            this.txtbx_LName.Size = new System.Drawing.Size(232, 23);
+            this.txtbx_LName.TabIndex = 7;
             // 
             // txtbx_Address
             // 
@@ -165,18 +170,65 @@ namespace Contact_Tracing_Form
             this.txtbx_Gender.Size = new System.Drawing.Size(111, 23);
             this.txtbx_Gender.TabIndex = 13;
             // 
+            // lbl_Time
+            // 
+            this.lbl_Time.AutoSize = true;
+            this.lbl_Time.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Time.Location = new System.Drawing.Point(118, 262);
+            this.lbl_Time.Name = "lbl_Time";
+            this.lbl_Time.Size = new System.Drawing.Size(68, 22);
+            this.lbl_Time.TabIndex = 14;
+            this.lbl_Time.Text = "Time: ";
+            // 
+            // txtbx_Time
+            // 
+            this.txtbx_Time.Location = new System.Drawing.Point(191, 262);
+            this.txtbx_Time.Name = "txtbx_Time";
+            this.txtbx_Time.Size = new System.Drawing.Size(111, 23);
+            this.txtbx_Time.TabIndex = 15;
+            // 
+            // cmb_AMPM
+            // 
+            this.cmb_AMPM.FormattingEnabled = true;
+            this.cmb_AMPM.Location = new System.Drawing.Point(308, 261);
+            this.cmb_AMPM.Name = "cmb_AMPM";
+            this.cmb_AMPM.Size = new System.Drawing.Size(46, 23);
+            this.cmb_AMPM.TabIndex = 16;
+            // 
+            // lbl_FName
+            // 
+            this.lbl_FName.AutoSize = true;
+            this.lbl_FName.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_FName.Location = new System.Drawing.Point(65, 81);
+            this.lbl_FName.Name = "lbl_FName";
+            this.lbl_FName.Size = new System.Drawing.Size(116, 22);
+            this.lbl_FName.TabIndex = 17;
+            this.lbl_FName.Text = "First Name:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(191, 82);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(232, 23);
+            this.textBox1.TabIndex = 18;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(465, 352);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lbl_FName);
+            this.Controls.Add(this.cmb_AMPM);
+            this.Controls.Add(this.txtbx_Time);
+            this.Controls.Add(this.lbl_Time);
             this.Controls.Add(this.txtbx_Gender);
             this.Controls.Add(this.lbl_Gender);
             this.Controls.Add(this.txtbx_Contact2);
             this.Controls.Add(this.txtbx_Contact1);
             this.Controls.Add(this.lbl_Contact);
             this.Controls.Add(this.txtbx_Address);
-            this.Controls.Add(this.txtbx_Name);
+            this.Controls.Add(this.txtbx_LName);
             this.Controls.Add(this.cmb_Year);
             this.Controls.Add(this.cmb_Month);
             this.Controls.Add(this.cmb_Day);
@@ -201,13 +253,18 @@ namespace Contact_Tracing_Form
         private System.Windows.Forms.ComboBox cmb_Day;
         private System.Windows.Forms.ComboBox cmb_Month;
         private System.Windows.Forms.ComboBox cmb_Year;
-        private System.Windows.Forms.TextBox txtbx_Name;
+        private System.Windows.Forms.TextBox txtbx_LName;
         private System.Windows.Forms.TextBox txtbx_Address;
         private System.Windows.Forms.Label lbl_Contact;
         private System.Windows.Forms.TextBox txtbx_Contact1;
         private System.Windows.Forms.TextBox txtbx_Contact2;
         private System.Windows.Forms.Label lbl_Gender;
         private System.Windows.Forms.TextBox txtbx_Gender;
+        private System.Windows.Forms.Label lbl_Time;
+        private System.Windows.Forms.TextBox txtbx_Time;
+        private System.Windows.Forms.ComboBox cmb_AMPM;
+        private System.Windows.Forms.Label lbl_FName;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
