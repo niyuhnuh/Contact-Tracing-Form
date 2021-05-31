@@ -39,8 +39,10 @@ namespace Contact_Tracing_Form
             this.txtbx_Name = new System.Windows.Forms.TextBox();
             this.txtbx_Address = new System.Windows.Forms.TextBox();
             this.lbl_Contact = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtbx_Contact1 = new System.Windows.Forms.TextBox();
+            this.txtbx_Contact2 = new System.Windows.Forms.TextBox();
+            this.lbl_Gender = new System.Windows.Forms.Label();
+            this.txtbx_Gender = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbl_Title
@@ -95,7 +97,7 @@ namespace Contact_Tracing_Form
             // cmb_Month
             // 
             this.cmb_Month.FormattingEnabled = true;
-            this.cmb_Month.Location = new System.Drawing.Point(243, 174);
+            this.cmb_Month.Location = new System.Drawing.Point(242, 175);
             this.cmb_Month.Name = "cmb_Month";
             this.cmb_Month.Size = new System.Drawing.Size(77, 23);
             this.cmb_Month.TabIndex = 5;
@@ -103,7 +105,7 @@ namespace Contact_Tracing_Form
             // cmb_Year
             // 
             this.cmb_Year.FormattingEnabled = true;
-            this.cmb_Year.Location = new System.Drawing.Point(326, 174);
+            this.cmb_Year.Location = new System.Drawing.Point(324, 175);
             this.cmb_Year.Name = "cmb_Year";
             this.cmb_Year.Size = new System.Drawing.Size(56, 23);
             this.cmb_Year.TabIndex = 6;
@@ -126,33 +128,52 @@ namespace Contact_Tracing_Form
             // 
             this.lbl_Contact.AutoSize = true;
             this.lbl_Contact.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_Contact.Location = new System.Drawing.Point(52, 211);
+            this.lbl_Contact.Location = new System.Drawing.Point(52, 233);
             this.lbl_Contact.Name = "lbl_Contact";
             this.lbl_Contact.Size = new System.Drawing.Size(129, 22);
             this.lbl_Contact.TabIndex = 9;
             this.lbl_Contact.Text = "Contact Info:";
             // 
-            // textBox1
+            // txtbx_Contact1
             // 
-            this.textBox1.Location = new System.Drawing.Point(191, 211);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(111, 23);
-            this.textBox1.TabIndex = 10;
+            this.txtbx_Contact1.Location = new System.Drawing.Point(191, 233);
+            this.txtbx_Contact1.Name = "txtbx_Contact1";
+            this.txtbx_Contact1.Size = new System.Drawing.Size(111, 23);
+            this.txtbx_Contact1.TabIndex = 10;
             // 
-            // textBox2
+            // txtbx_Contact2
             // 
-            this.textBox2.Location = new System.Drawing.Point(312, 211);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(111, 23);
-            this.textBox2.TabIndex = 11;
+            this.txtbx_Contact2.Location = new System.Drawing.Point(312, 233);
+            this.txtbx_Contact2.Name = "txtbx_Contact2";
+            this.txtbx_Contact2.Size = new System.Drawing.Size(111, 23);
+            this.txtbx_Contact2.TabIndex = 11;
+            // 
+            // lbl_Gender
+            // 
+            this.lbl_Gender.AutoSize = true;
+            this.lbl_Gender.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Gender.Location = new System.Drawing.Point(94, 205);
+            this.lbl_Gender.Name = "lbl_Gender";
+            this.lbl_Gender.Size = new System.Drawing.Size(86, 22);
+            this.lbl_Gender.TabIndex = 12;
+            this.lbl_Gender.Text = "Gender:";
+            // 
+            // txtbx_Gender
+            // 
+            this.txtbx_Gender.Location = new System.Drawing.Point(191, 204);
+            this.txtbx_Gender.Name = "txtbx_Gender";
+            this.txtbx_Gender.Size = new System.Drawing.Size(111, 23);
+            this.txtbx_Gender.TabIndex = 13;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(465, 352);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtbx_Gender);
+            this.Controls.Add(this.lbl_Gender);
+            this.Controls.Add(this.txtbx_Contact2);
+            this.Controls.Add(this.txtbx_Contact1);
             this.Controls.Add(this.lbl_Contact);
             this.Controls.Add(this.txtbx_Address);
             this.Controls.Add(this.txtbx_Name);
@@ -183,8 +204,10 @@ namespace Contact_Tracing_Form
         private System.Windows.Forms.TextBox txtbx_Name;
         private System.Windows.Forms.TextBox txtbx_Address;
         private System.Windows.Forms.Label lbl_Contact;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtbx_Contact1;
+        private System.Windows.Forms.TextBox txtbx_Contact2;
+        private System.Windows.Forms.Label lbl_Gender;
+        private System.Windows.Forms.TextBox txtbx_Gender;
     }
 }
 
