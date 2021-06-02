@@ -15,6 +15,8 @@ namespace Contact_Tracing_Form
         public Form1()
         {
             InitializeComponent();
+            this.cmbDays();
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -31,6 +33,21 @@ namespace Contact_Tracing_Form
             txtbx_Contact1.Text = "";
             txtbx_Contact2.Text = "";
             txtbx_Time.Text = "";
+        }
+
+       private void cmbDays()
+        {
+            System.Object[] dates = new System.Object[32];
+            for (int i = 0; i <= 31; i++)
+            {
+                dates[i] = i;
+            }
+            cmb_Day.Items.AddRange(dates);
+
+       }
+        private void cmb_Day_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cmbDays();
         }
     }
 }

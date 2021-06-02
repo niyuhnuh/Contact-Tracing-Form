@@ -95,11 +95,13 @@ namespace Contact_Tracing_Form
             // 
             // cmb_Day
             // 
+            this.cmb_Day.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Day.FormattingEnabled = true;
             this.cmb_Day.Location = new System.Drawing.Point(191, 175);
             this.cmb_Day.Name = "cmb_Day";
             this.cmb_Day.Size = new System.Drawing.Size(46, 23);
             this.cmb_Day.TabIndex = 4;
+            this.cmb_Day.SelectedIndexChanged += new System.EventHandler(this.cmb_Day_SelectedIndexChanged);
             // 
             // cmb_Month
             // 
