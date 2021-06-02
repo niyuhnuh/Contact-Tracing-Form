@@ -118,6 +118,7 @@ namespace Contact_Tracing_Form
             this.cmb_Year.Name = "cmb_Year";
             this.cmb_Year.Size = new System.Drawing.Size(56, 23);
             this.cmb_Year.TabIndex = 6;
+            this.cmb_Year.SelectedIndexChanged += new System.EventHandler(this.cmb_Year_SelectedIndexChanged);
             // 
             // txtbx_LName
             // 

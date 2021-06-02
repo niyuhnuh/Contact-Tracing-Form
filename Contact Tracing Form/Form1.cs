@@ -17,7 +17,7 @@ namespace Contact_Tracing_Form
             InitializeComponent();
             this.cmbDays();
             this.cmbMonths();
-
+            this.cmbYears();
         }
 
         private void btn_Clear_Click(object sender, EventArgs e)
@@ -31,28 +31,27 @@ namespace Contact_Tracing_Form
             txtbx_Time.Text = "";
         }
 
-       private void cmbDays()
-       {
-            System.Object[] dates = new System.Object[32];
-            for (int i = 1; i <= 31; i++)
+        private void cmbDays()
+        {
+            System.Object[] dates = new System.Object[31];
+            for (int i = 0; i <= 30; i++)
             {
-                dates[i] = i;
+                dates[i] = i + 1;
             }
             cmb_Day.Items.AddRange(dates);
 
-       }
+        }
 
 
         private void cmb_Day_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbDays();
-          
+
         }
 
         private void cmb_Month_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbMonths();
-
         }
 
         private void cmbMonths()
@@ -70,5 +69,16 @@ namespace Contact_Tracing_Form
             cmb_Month.Items.Add("November");
             cmb_Month.Items.Add("December");
         }
+
+        private void cmb_Year_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cmbYears();
+        }
+
+        private void cmbYears()
+        {
+
+        }
+
     }
 }
