@@ -77,8 +77,8 @@ namespace Contact_Tracing_Form
 
         private void cmbYears()
         {
-            System.Object[] years = new System.Object[2000];
-            for (int i = 0; i <= 1999; i++)
+            System.Object[] years = new System.Object[800];
+            for (int i = 0; i <= 799; i++)
             {
                 years[i] = i + 1900;
             }
