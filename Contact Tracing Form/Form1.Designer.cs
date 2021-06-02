@@ -81,7 +81,6 @@ namespace Contact_Tracing_Form
             this.lbl_Address.Size = new System.Drawing.Size(100, 22);
             this.lbl_Address.TabIndex = 2;
             this.lbl_Address.Text = "Address: ";
-            this.lbl_Address.Click += new System.EventHandler(this.label1_Click);
             // 
             // lbl_Birthday
             // 
@@ -105,6 +104,7 @@ namespace Contact_Tracing_Form
             // 
             // cmb_Month
             // 
+            this.cmb_Month.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Month.FormattingEnabled = true;
             this.cmb_Month.Location = new System.Drawing.Point(242, 175);
             this.cmb_Month.Name = "cmb_Month";

@@ -16,11 +16,7 @@ namespace Contact_Tracing_Form
         {
             InitializeComponent();
             this.cmbDays();
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
+            this.cmbMonths();
 
         }
 
@@ -36,18 +32,43 @@ namespace Contact_Tracing_Form
         }
 
        private void cmbDays()
-        {
+       {
             System.Object[] dates = new System.Object[32];
-            for (int i = 0; i <= 31; i++)
+            for (int i = 1; i <= 31; i++)
             {
                 dates[i] = i;
             }
             cmb_Day.Items.AddRange(dates);
 
        }
+
+
         private void cmb_Day_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbDays();
+          
+        }
+
+        private void cmb_Month_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cmbMonths();
+
+        }
+
+        private void cmbMonths()
+        {
+            cmb_Month.Items.Add("January");
+            cmb_Month.Items.Add("February");
+            cmb_Month.Items.Add("March");
+            cmb_Month.Items.Add("April");
+            cmb_Month.Items.Add("May");
+            cmb_Month.Items.Add("June");
+            cmb_Month.Items.Add("July");
+            cmb_Month.Items.Add("August");
+            cmb_Month.Items.Add("September");
+            cmb_Month.Items.Add("October");
+            cmb_Month.Items.Add("November");
+            cmb_Month.Items.Add("December");
         }
     }
 }
