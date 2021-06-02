@@ -82,7 +82,7 @@ namespace Contact_Tracing_Form
             {
                 years[i] = i + 50;
             }
-            cmb_Day.Items.AddRange(years);
+            cmb_Year.Items.AddRange(years);
         }
 
     }
