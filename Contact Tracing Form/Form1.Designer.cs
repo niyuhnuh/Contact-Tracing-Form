@@ -48,6 +48,8 @@ namespace Contact_Tracing_Form
             this.cmb_AMPM = new System.Windows.Forms.ComboBox();
             this.lbl_FName = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btn_Save = new System.Windows.Forms.Button();
+            this.btn_Clear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_Title
@@ -212,11 +214,31 @@ namespace Contact_Tracing_Form
             this.textBox1.Size = new System.Drawing.Size(232, 23);
             this.textBox1.TabIndex = 18;
             // 
+            // btn_Save
+            // 
+            this.btn_Save.Location = new System.Drawing.Point(348, 308);
+            this.btn_Save.Name = "btn_Save";
+            this.btn_Save.Size = new System.Drawing.Size(75, 23);
+            this.btn_Save.TabIndex = 19;
+            this.btn_Save.Text = "Save";
+            this.btn_Save.UseVisualStyleBackColor = true;
+            // 
+            // btn_Clear
+            // 
+            this.btn_Clear.Location = new System.Drawing.Point(267, 308);
+            this.btn_Clear.Name = "btn_Clear";
+            this.btn_Clear.Size = new System.Drawing.Size(75, 23);
+            this.btn_Clear.TabIndex = 20;
+            this.btn_Clear.Text = "Clear";
+            this.btn_Clear.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(465, 302);
+            this.ClientSize = new System.Drawing.Size(465, 347);
+            this.Controls.Add(this.btn_Clear);
+            this.Controls.Add(this.btn_Save);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lbl_FName);
             this.Controls.Add(this.cmb_AMPM);
@@ -265,6 +287,8 @@ namespace Contact_Tracing_Form
         private System.Windows.Forms.ComboBox cmb_AMPM;
         private System.Windows.Forms.Label lbl_FName;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btn_Save;
+        private System.Windows.Forms.Button btn_Clear;
     }
 }
 
