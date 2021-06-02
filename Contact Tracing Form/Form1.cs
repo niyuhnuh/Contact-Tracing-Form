@@ -36,6 +36,8 @@ namespace Contact_Tracing_Form
             cmb_Month.ResetText();
             cmb_Year.Items.Clear();
             cmb_Year.ResetText();
+            cmb_AMPM.Items.Clear();
+            cmb_AMPM.ResetText();
         }
 
         private void cmbDays()
@@ -87,7 +89,7 @@ namespace Contact_Tracing_Form
             System.Object[] years = new System.Object[122];
             for (int i = 0; i <= 121; i++)
             {
-                years[i] = i + 1900;
+                years[i] = i + 1920;
             }
             cmb_Year.Items.AddRange(years);
         }
