@@ -47,7 +47,7 @@ namespace Contact_Tracing_Form
             this.txtbx_Time = new System.Windows.Forms.TextBox();
             this.cmb_AMPM = new System.Windows.Forms.ComboBox();
             this.lbl_FName = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtbx_FName = new System.Windows.Forms.TextBox();
             this.btn_Save = new System.Windows.Forms.Button();
             this.btn_Clear = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -207,12 +207,12 @@ namespace Contact_Tracing_Form
             this.lbl_FName.TabIndex = 17;
             this.lbl_FName.Text = "First Name:";
             // 
-            // textBox1
+            // txtbx_FName
             // 
-            this.textBox1.Location = new System.Drawing.Point(191, 82);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(232, 23);
-            this.textBox1.TabIndex = 18;
+            this.txtbx_FName.Location = new System.Drawing.Point(191, 82);
+            this.txtbx_FName.Name = "txtbx_FName";
+            this.txtbx_FName.Size = new System.Drawing.Size(232, 23);
+            this.txtbx_FName.TabIndex = 18;
             // 
             // btn_Save
             // 
@@ -231,6 +231,7 @@ namespace Contact_Tracing_Form
             this.btn_Clear.TabIndex = 20;
             this.btn_Clear.Text = "Clear";
             this.btn_Clear.UseVisualStyleBackColor = true;
+            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
             // 
             // Form1
             // 
@@ -239,7 +240,7 @@ namespace Contact_Tracing_Form
             this.ClientSize = new System.Drawing.Size(465, 347);
             this.Controls.Add(this.btn_Clear);
             this.Controls.Add(this.btn_Save);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtbx_FName);
             this.Controls.Add(this.lbl_FName);
             this.Controls.Add(this.cmb_AMPM);
             this.Controls.Add(this.txtbx_Time);
@@ -286,7 +287,7 @@ namespace Contact_Tracing_Form
         private System.Windows.Forms.TextBox txtbx_Time;
         private System.Windows.Forms.ComboBox cmb_AMPM;
         private System.Windows.Forms.Label lbl_FName;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtbx_FName;
         private System.Windows.Forms.Button btn_Save;
         private System.Windows.Forms.Button btn_Clear;
     }

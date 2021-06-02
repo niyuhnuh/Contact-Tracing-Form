@@ -21,5 +21,16 @@ namespace Contact_Tracing_Form
         {
 
         }
+
+        private void btn_Clear_Click(object sender, EventArgs e)
+        {
+            txtbx_FName.Text = "";
+            txtbx_LName.Text = "";
+            txtbx_Address.Text = "";
+            txtbx_Gender.Text = "";
+            txtbx_Contact1.Text = "";
+            txtbx_Contact2.Text = "";
+            txtbx_Time.Text = "";
+        }
     }
 }
