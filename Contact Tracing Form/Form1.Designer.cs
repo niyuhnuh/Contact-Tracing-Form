@@ -50,6 +50,13 @@ namespace Contact_Tracing_Form
             this.txtbx_FName = new System.Windows.Forms.TextBox();
             this.btn_Save = new System.Windows.Forms.Button();
             this.btn_Clear = new System.Windows.Forms.Button();
+            this.lbl_Req1 = new System.Windows.Forms.Label();
+            this.lbl_Req2 = new System.Windows.Forms.Label();
+            this.lbl_Req3 = new System.Windows.Forms.Label();
+            this.lbl_Req4 = new System.Windows.Forms.Label();
+            this.lbl_Req5 = new System.Windows.Forms.Label();
+            this.lbl_Req6 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_Title
@@ -239,11 +246,102 @@ namespace Contact_Tracing_Form
             this.btn_Clear.UseVisualStyleBackColor = true;
             this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
             // 
+            // lbl_Req1
+            // 
+            this.lbl_Req1.AutoSize = true;
+            this.lbl_Req1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Req1.ForeColor = System.Drawing.Color.Red;
+            this.lbl_Req1.Location = new System.Drawing.Point(429, 85);
+            this.lbl_Req1.Name = "lbl_Req1";
+            this.lbl_Req1.Size = new System.Drawing.Size(17, 22);
+            this.lbl_Req1.TabIndex = 21;
+            this.lbl_Req1.Text = "*";
+            this.lbl_Req1.Visible = false;
+            // 
+            // lbl_Req2
+            // 
+            this.lbl_Req2.AutoSize = true;
+            this.lbl_Req2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Req2.ForeColor = System.Drawing.Color.Red;
+            this.lbl_Req2.Location = new System.Drawing.Point(429, 115);
+            this.lbl_Req2.Name = "lbl_Req2";
+            this.lbl_Req2.Size = new System.Drawing.Size(17, 22);
+            this.lbl_Req2.TabIndex = 22;
+            this.lbl_Req2.Text = "*";
+            this.lbl_Req2.Visible = false;
+            // 
+            // lbl_Req3
+            // 
+            this.lbl_Req3.AutoSize = true;
+            this.lbl_Req3.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Req3.ForeColor = System.Drawing.Color.Red;
+            this.lbl_Req3.Location = new System.Drawing.Point(429, 146);
+            this.lbl_Req3.Name = "lbl_Req3";
+            this.lbl_Req3.Size = new System.Drawing.Size(17, 22);
+            this.lbl_Req3.TabIndex = 23;
+            this.lbl_Req3.Text = "*";
+            this.lbl_Req3.Visible = false;
+            // 
+            // lbl_Req4
+            // 
+            this.lbl_Req4.AutoSize = true;
+            this.lbl_Req4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Req4.ForeColor = System.Drawing.Color.Red;
+            this.lbl_Req4.Location = new System.Drawing.Point(386, 176);
+            this.lbl_Req4.Name = "lbl_Req4";
+            this.lbl_Req4.Size = new System.Drawing.Size(17, 22);
+            this.lbl_Req4.TabIndex = 24;
+            this.lbl_Req4.Text = "*";
+            this.lbl_Req4.Visible = false;
+            // 
+            // lbl_Req5
+            // 
+            this.lbl_Req5.AutoSize = true;
+            this.lbl_Req5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Req5.ForeColor = System.Drawing.Color.Red;
+            this.lbl_Req5.Location = new System.Drawing.Point(429, 234);
+            this.lbl_Req5.Name = "lbl_Req5";
+            this.lbl_Req5.Size = new System.Drawing.Size(17, 22);
+            this.lbl_Req5.TabIndex = 25;
+            this.lbl_Req5.Text = "*";
+            this.lbl_Req5.Visible = false;
+            // 
+            // lbl_Req6
+            // 
+            this.lbl_Req6.AutoSize = true;
+            this.lbl_Req6.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Req6.ForeColor = System.Drawing.Color.Red;
+            this.lbl_Req6.Location = new System.Drawing.Point(363, 262);
+            this.lbl_Req6.Name = "lbl_Req6";
+            this.lbl_Req6.Size = new System.Drawing.Size(17, 22);
+            this.lbl_Req6.TabIndex = 26;
+            this.lbl_Req6.Text = "*";
+            this.lbl_Req6.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(12, 293);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(211, 38);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "* Required fields. \r\nPlease do not leave empty.";
+            this.label1.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(465, 347);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_Req6);
+            this.Controls.Add(this.lbl_Req5);
+            this.Controls.Add(this.lbl_Req4);
+            this.Controls.Add(this.lbl_Req3);
+            this.Controls.Add(this.lbl_Req2);
+            this.Controls.Add(this.lbl_Req1);
             this.Controls.Add(this.btn_Clear);
             this.Controls.Add(this.btn_Save);
             this.Controls.Add(this.txtbx_FName);
@@ -296,6 +394,13 @@ namespace Contact_Tracing_Form
         private System.Windows.Forms.TextBox txtbx_FName;
         private System.Windows.Forms.Button btn_Save;
         private System.Windows.Forms.Button btn_Clear;
+        private System.Windows.Forms.Label lbl_Req1;
+        private System.Windows.Forms.Label lbl_Req2;
+        private System.Windows.Forms.Label lbl_Req3;
+        private System.Windows.Forms.Label lbl_Req4;
+        private System.Windows.Forms.Label lbl_Req5;
+        private System.Windows.Forms.Label lbl_Req6;
+        private System.Windows.Forms.Label label1;
     }
 }
 
