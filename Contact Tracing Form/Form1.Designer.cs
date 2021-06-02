@@ -216,7 +216,7 @@ namespace Contact_Tracing_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(465, 352);
+            this.ClientSize = new System.Drawing.Size(465, 302);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lbl_FName);
             this.Controls.Add(this.cmb_AMPM);
