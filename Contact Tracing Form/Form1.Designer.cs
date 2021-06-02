@@ -195,11 +195,13 @@ namespace Contact_Tracing_Form
             // 
             // cmb_AMPM
             // 
+            this.cmb_AMPM.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_AMPM.FormattingEnabled = true;
             this.cmb_AMPM.Location = new System.Drawing.Point(308, 261);
             this.cmb_AMPM.Name = "cmb_AMPM";
             this.cmb_AMPM.Size = new System.Drawing.Size(46, 23);
             this.cmb_AMPM.TabIndex = 16;
+            this.cmb_AMPM.SelectedIndexChanged += new System.EventHandler(this.cmb_AMPM_SelectedIndexChanged);
             // 
             // lbl_FName
             // 

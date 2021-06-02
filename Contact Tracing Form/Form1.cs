@@ -18,6 +18,7 @@ namespace Contact_Tracing_Form
             this.cmbDays();
             this.cmbMonths();
             this.cmbYears();
+            this.cmbAMPM();
         }
 
         private void btn_Clear_Click(object sender, EventArgs e)
@@ -85,5 +86,15 @@ namespace Contact_Tracing_Form
             cmb_Year.Items.AddRange(years);
         }
 
+        private void cmb_AMPM_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cmbAMPM();
+        }
+        
+        private void cmbAMPM()
+        {
+            cmb_AMPM.Items.Add("AM");
+            cmb_AMPM.Items.Add("PM");
+        }
     }
 }
