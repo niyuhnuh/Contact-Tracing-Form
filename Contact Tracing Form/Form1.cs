@@ -30,6 +30,12 @@ namespace Contact_Tracing_Form
             txtbx_Contact1.Text = "";
             txtbx_Contact2.Text = "";
             txtbx_Time.Text = "";
+            cmb_Day.Items.Clear();
+            cmb_Day.ResetText();
+            cmb_Month.Items.Clear();
+            cmb_Month.ResetText();
+            cmb_Year.Items.Clear();
+            cmb_Year.ResetText();
         }
 
         private void cmbDays()
