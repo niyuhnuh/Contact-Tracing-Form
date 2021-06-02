@@ -34,7 +34,7 @@ namespace Contact_Tracing_Form
         private void cmbDays()
         {
             System.Object[] dates = new System.Object[31];
-            for (int i = 0; i <= 30; i++)
+            for (byte i = 0; i <= 30; i++)
             {
                 dates[i] = i + 1;
             }
@@ -77,7 +77,12 @@ namespace Contact_Tracing_Form
 
         private void cmbYears()
         {
-
+            System.Object[] years = new System.Object[100];
+            for (int i = 0; i <= 99; i++)
+            {
+                years[i] = i + 50;
+            }
+            cmb_Day.Items.AddRange(years);
         }
 
     }

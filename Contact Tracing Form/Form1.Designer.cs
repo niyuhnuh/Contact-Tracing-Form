@@ -113,6 +113,7 @@ namespace Contact_Tracing_Form
             // 
             // cmb_Year
             // 
+            this.cmb_Year.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Year.FormattingEnabled = true;
             this.cmb_Year.Location = new System.Drawing.Point(324, 175);
             this.cmb_Year.Name = "cmb_Year";
