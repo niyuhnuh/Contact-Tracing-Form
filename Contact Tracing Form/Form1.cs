@@ -21,6 +21,12 @@ namespace Contact_Tracing_Form
             this.cmbAMPM();
         }
 
+        bool f_Name = false;
+        bool l_Name = false;
+        bool address = false;
+        bool day = false;
+        bool month = false; 
+
         private void btn_Clear_Click(object sender, EventArgs e)
         {
             txtbx_FName.Text = "";
@@ -103,6 +109,14 @@ namespace Contact_Tracing_Form
         {
             cmb_AMPM.Items.Add("AM");
             cmb_AMPM.Items.Add("PM");
+        }
+
+        private void btn_Save_Click(object sender, EventArgs e)
+        {
+            if ()
+            {
+
+            }
         }
     }
 }
