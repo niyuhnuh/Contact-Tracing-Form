@@ -21,7 +21,7 @@ namespace Contact_Tracing_Form
             this.cmbAMPM();
         }
 
-        bool f_Name, l_Name, address, day, month, year, contact_Info1, contact_Info2, time = false;
+        bool f_Name, l_Name, address, day, month, year, contact_Info1, contact_Info2, time, spec_Time = false;
 
         private void btn_Clear_Click(object sender, EventArgs e)
         {
@@ -71,6 +71,11 @@ namespace Contact_Tracing_Form
         private void txtbx_Contact1_TextChanged(object sender, EventArgs e)
         {
             contact_Info1 = true;
+        }
+
+        private void txtbx_Time_TextChanged(object sender, EventArgs e)
+        {
+            spec_Time = true;
         }
 
         private void txtbx_Contact2_TextChanged(object sender, EventArgs e)
@@ -147,6 +152,38 @@ namespace Contact_Tracing_Form
             else if(address == false)
             {
                 lbl_Req3.Visible = true;
+            }
+            else if(day == false)
+            {
+                lbl_Req4.Visible = true;
+            }
+            else if(month == false)
+            {
+                lbl_Req4.Visible = true;
+            }
+            else if(year == false)
+            {
+                lbl_Req4.Visible = true;
+            }
+            else if(contact_Info1 == false)
+            {
+                lbl_Req5.Visible = true;
+            }
+            else if(contact_Info2 == false)
+            {
+                lbl_Req5.Visible = true;
+            }
+            else if(time == false)
+            {
+                lbl_Req6.Visible = true;
+            }
+            else if(spec_Time == false)
+            {
+                lbl_Req6.Visible = true;
+            }
+            else
+            {
+                
             }
         }
     }
