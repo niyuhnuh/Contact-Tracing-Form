@@ -21,11 +21,7 @@ namespace Contact_Tracing_Form
             this.cmbAMPM();
         }
 
-        bool f_Name = false;
-        bool l_Name = false;
-        bool address = false;
-        bool day = false;
-        bool month = false; 
+        bool f_Name, l_Name, address, day, month, year, contact_Info1, contact_Info2, time = false;
 
         private void btn_Clear_Click(object sender, EventArgs e)
         {
@@ -61,7 +57,6 @@ namespace Contact_Tracing_Form
         private void cmb_Day_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbDays();
-
         }
 
         private void cmb_Month_SelectedIndexChanged(object sender, EventArgs e)
