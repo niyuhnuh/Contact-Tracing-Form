@@ -134,6 +134,7 @@ namespace Contact_Tracing_Form
             this.txtbx_LName.Name = "txtbx_LName";
             this.txtbx_LName.Size = new System.Drawing.Size(232, 23);
             this.txtbx_LName.TabIndex = 7;
+            this.txtbx_LName.TextChanged += new System.EventHandler(this.txtbx_LName_TextChanged);
             // 
             // txtbx_Address
             // 
@@ -141,6 +142,7 @@ namespace Contact_Tracing_Form
             this.txtbx_Address.Name = "txtbx_Address";
             this.txtbx_Address.Size = new System.Drawing.Size(232, 23);
             this.txtbx_Address.TabIndex = 8;
+            this.txtbx_Address.TextChanged += new System.EventHandler(this.txtbx_Address_TextChanged);
             // 
             // lbl_Contact
             // 
@@ -158,6 +160,7 @@ namespace Contact_Tracing_Form
             this.txtbx_Contact1.Name = "txtbx_Contact1";
             this.txtbx_Contact1.Size = new System.Drawing.Size(111, 23);
             this.txtbx_Contact1.TabIndex = 10;
+            this.txtbx_Contact1.TextChanged += new System.EventHandler(this.txtbx_Contact1_TextChanged);
             // 
             // txtbx_Contact2
             // 
@@ -165,6 +168,7 @@ namespace Contact_Tracing_Form
             this.txtbx_Contact2.Name = "txtbx_Contact2";
             this.txtbx_Contact2.Size = new System.Drawing.Size(111, 23);
             this.txtbx_Contact2.TabIndex = 11;
+            this.txtbx_Contact2.TextChanged += new System.EventHandler(this.txtbx_Contact2_TextChanged);
             // 
             // lbl_Gender
             // 
@@ -226,6 +230,7 @@ namespace Contact_Tracing_Form
             this.txtbx_FName.Name = "txtbx_FName";
             this.txtbx_FName.Size = new System.Drawing.Size(232, 23);
             this.txtbx_FName.TabIndex = 18;
+            this.txtbx_FName.TextChanged += new System.EventHandler(this.txtbx_FName_TextChanged);
             // 
             // btn_Save
             // 

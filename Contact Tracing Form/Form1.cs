@@ -53,15 +53,41 @@ namespace Contact_Tracing_Form
 
         }
 
+        private void txtbx_FName_TextChanged(object sender, EventArgs e)
+        {
+            f_Name = true;
+        }
+
+        private void txtbx_LName_TextChanged(object sender, EventArgs e)
+        {
+            l_Name = true;
+        }
+
+        private void txtbx_Address_TextChanged(object sender, EventArgs e)
+        {
+            address = true;
+        }
+
+        private void txtbx_Contact1_TextChanged(object sender, EventArgs e)
+        {
+            contact_Info1 = true;
+        }
+
+        private void txtbx_Contact2_TextChanged(object sender, EventArgs e)
+        {
+            contact_Info2 = true; 
+        }
 
         private void cmb_Day_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbDays();
+            day = true;
         }
 
         private void cmb_Month_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbMonths();
+            month = true;
         }
 
         private void cmbMonths()
@@ -83,6 +109,7 @@ namespace Contact_Tracing_Form
         private void cmb_Year_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbYears();
+            year = true;
         }
 
         private void cmbYears()
@@ -98,6 +125,7 @@ namespace Contact_Tracing_Form
         private void cmb_AMPM_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbAMPM();
+            time = true;
         }
         
         private void cmbAMPM()
@@ -108,9 +136,17 @@ namespace Contact_Tracing_Form
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
-            if ()
+            if (f_Name == false)
             {
-
+                lbl_Req1.Visible = true;
+            }
+            else if(l_Name == false)
+            {
+                lbl_Req2.Visible = true;
+            }
+            else if(address == false)
+            {
+                lbl_Req3.Visible = true;
             }
         }
     }
