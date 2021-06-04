@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace Contact_Tracing_Form
 {
@@ -183,7 +185,10 @@ namespace Contact_Tracing_Form
             }
             else
             {
-                
+                StreamWriter savedInfo;
+                savedInfo = File.CreateText("saved.txt");
+                savedInfo
+
             }
         }
     }
