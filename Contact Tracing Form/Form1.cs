@@ -188,7 +188,8 @@ namespace Contact_Tracing_Form
                 StreamWriter savedInfo;
                 savedInfo = File.CreateText("saved.txt");
                 savedInfo.WriteLine("Name: " + txtbx_FName.Text + txtbx_LName.Text);
-                
+                savedInfo.WriteLine("Address: " + txtbx_Address.Text);
+                savedInfo.WriteLine("Birthday: " + cmb_Month.Text + ", " + cmb_Day + cmb_Year);
 
             }
         }
