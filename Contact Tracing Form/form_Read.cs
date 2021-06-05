@@ -30,15 +30,10 @@ namespace Contact_Tracing_Form
                 }
             }
 
+            string [] row =  new string []
             dg_SavedInfo.DataSource = tb_SavedInfo;
 
-            tb_SavedInfo.Columns.Add("First Name");
-            tb_SavedInfo.Columns.Add("Last Name");
-            tb_SavedInfo.Columns.Add("Address");
-            tb_SavedInfo.Columns.Add("Birthday");
-            tb_SavedInfo.Columns.Add("Gender (Optional)");
-            tb_SavedInfo.Columns.Add("Contact Info");
-            tb_SavedInfo.Columns.Add("Time Logged");
+           
         }
     }
 }
