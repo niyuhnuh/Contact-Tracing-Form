@@ -244,6 +244,10 @@ namespace Contact_Tracing_Form
                 savedInfo.WriteLine("Contact Information: " + txtbx_Contact1.Text + " | " + txtbx_Contact2.Text);
                 savedInfo.WriteLine("Time Logged: " + txtbx_Time.Text + " " + cmb_AMPM.SelectedItem);
                 savedInfo.Close();
+
+                Form form_Read = new Form();
+                form_Read.Visible = true;
+
             }
         }
     }

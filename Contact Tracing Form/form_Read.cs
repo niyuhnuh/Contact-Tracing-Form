@@ -10,7 +10,8 @@ namespace Contact_Tracing_Form
 {
     public partial class form_Read : Form
     {
-        DataTable tb_SavedInfo = new DataTable("Saved Information");
+        public DataTable tb_SavedInfo = new DataTable("Saved Information");
+       
         public form_Read()
         {
             InitializeComponent();
@@ -18,6 +19,7 @@ namespace Contact_Tracing_Form
 
         private void form_Read_Load(object sender, EventArgs e)
         {
+
             dg_SavedInfo.DataSource = tb_SavedInfo;
 
             tb_SavedInfo.Columns.Add("First Name");
