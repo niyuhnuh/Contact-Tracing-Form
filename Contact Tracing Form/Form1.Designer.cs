@@ -1,7 +1,7 @@
 ﻿
 namespace Contact_Tracing_Form
 {
-    partial class Form1
+    partial class form_Registration
     {
         /// <summary>
         ///  Required designer variable.
@@ -324,7 +324,7 @@ namespace Contact_Tracing_Form
             this.lbl_Status.Text = "* Required fields. \r\nPlease do not leave empty.";
             this.lbl_Status.Visible = false;
             // 
-            // Form1
+            // form_Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -357,8 +357,8 @@ namespace Contact_Tracing_Form
             this.Controls.Add(this.lbl_Name);
             this.Controls.Add(this.lbl_Title);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "form_Registration";
+            this.Text = "Registration Form";
             this.ResumeLayout(false);
             this.PerformLayout();
 

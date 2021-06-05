@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace Contact_Tracing_Form
 {
-    public partial class Form1 : Form
+    public partial class form_Registration : Form
     {
-        public Form1()
+        public form_Registration()
         {
             InitializeComponent();
             this.cmbDays();
@@ -237,9 +237,12 @@ namespace Contact_Tracing_Form
             {
                 StreamWriter savedInfo;
                 savedInfo = File.CreateText("saved.txt");
-                savedInfo.WriteLine("Name: " + txtbx_FName.Text + txtbx_LName.Text);
+                savedInfo.WriteLine("Name: " + txtbx_FName.Text +" "+ txtbx_LName.Text);
                 savedInfo.WriteLine("Address: " + txtbx_Address.Text);
-                savedInfo.WriteLine("Birthday: " + cmb_Month.SelectedIndex + ", " + cmb_Day.SelectedIndex + cmb_Year.SelectedIndex);
+                savedInfo.WriteLine("Birthday: " + cmb_Month.SelectedItem + ", " + cmb_Day.SelectedItem + cmb_Year.SelectedItem);
+                savedInfo.WriteLine("Gender: " + txtbx_Gender.Text);
+                savedInfo.WriteLine("Contact Information: " + txtbx_Contact1.Text + " | " + txtbx_Contact2.Text);
+                savedInfo.WriteLine("Time Logged: " + txtbx_Time.Text + " " + cmb_AMPM.SelectedItem);
                 savedInfo.Close();
             }
         }
