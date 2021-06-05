@@ -29,13 +29,14 @@ namespace Contact_Tracing_Form
                 while (!readInfo.EndOfStream)
                 {
                     info.Add(readInfo.ReadLine());
-                    for(int x = 0; x < 8; x++)
-                    {
-                        col
-                    }
+            
                 }
             }
 
+            for (int x = 0; x < 8; x++)
+            {
+                saved.Columns.Add();
+            }
         }
     }
 }
