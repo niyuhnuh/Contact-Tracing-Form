@@ -30,6 +30,7 @@ namespace Contact_Tracing_Form
         private void InitializeComponent()
         {
             this.dg_SavedInfo = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dg_SavedInfo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,11 +48,21 @@ namespace Contact_Tracing_Form
             this.dg_SavedInfo.Size = new System.Drawing.Size(440, 125);
             this.dg_SavedInfo.TabIndex = 0;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(53, 75);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(162, 61);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "BUTTON";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // form_Read
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(464, 348);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dg_SavedInfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "form_Read";
@@ -65,5 +76,6 @@ namespace Contact_Tracing_Form
         #endregion
 
         private System.Windows.Forms.DataGridView dg_SavedInfo;
+        private System.Windows.Forms.Button button1;
     }
 }

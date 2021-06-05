@@ -21,7 +21,7 @@ namespace Contact_Tracing_Form
         {
             DataTable savedInfo = new DataTable("Saved Information");
             DataColumn dt_Column;
-            DataRow dt_Row;
+
 
             dt_Column = new DataColumn();
             dt_Column.DataType = typeof(string);
@@ -31,9 +31,7 @@ namespace Contact_Tracing_Form
             dt_Column.DataType = typeof(string);
             dt_Column.ColumnName = "Last Name";
 
-            var row = savedInfo.NewRow();
-            row["First Name"] = "Hello";
-            row["Last Name"] =  "Waters";
+        
         }
     }
 }

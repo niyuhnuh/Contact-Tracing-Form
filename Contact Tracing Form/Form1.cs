@@ -264,8 +264,8 @@ namespace Contact_Tracing_Form
 
                 this.Hide();
 
-                Form form_Read = new Form();
-                form_Read.Show();
+                form_Read f2 = new form_Read();
+                f2.ShowDialog();
             }
         }
     }
