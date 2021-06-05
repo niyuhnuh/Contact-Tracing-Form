@@ -64,12 +64,22 @@ namespace Contact_Tracing_Form
 
         private void txtbx_FName_TextChanged(object sender, EventArgs e)
         {
-            f_Name = true;
+            if (txtbx_FName.Text == "")
+                f_Name = false;
+            else
+            {
+                f_Name = true;
+            }
         }
 
         private void txtbx_LName_TextChanged(object sender, EventArgs e)
         {
-            l_Name = true;
+            if (txtbx_LName.Text == "")
+                l_Name = false;
+            else
+            {
+                l_Name = true;
+            }
         }
 
         private void txtbx_Address_TextChanged(object sender, EventArgs e)
