@@ -29,35 +29,36 @@ namespace Contact_Tracing_Form
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dg_SavedInfo = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dg_SavedInfo)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dg_SavedInfo
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(440, 324);
-            this.dataGridView1.TabIndex = 0;
+            this.dg_SavedInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dg_SavedInfo.Location = new System.Drawing.Point(12, 12);
+            this.dg_SavedInfo.Name = "dg_SavedInfo";
+            this.dg_SavedInfo.RowTemplate.Height = 25;
+            this.dg_SavedInfo.Size = new System.Drawing.Size(440, 324);
+            this.dg_SavedInfo.TabIndex = 0;
             // 
             // form_Read
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(464, 348);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dg_SavedInfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "form_Read";
             this.Text = "form_Read";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.form_Read_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dg_SavedInfo)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dg_SavedInfo;
     }
 }
