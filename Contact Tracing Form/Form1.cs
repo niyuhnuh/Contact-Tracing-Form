@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System 
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 
 namespace Contact_Tracing_Form
@@ -184,7 +186,7 @@ namespace Contact_Tracing_Form
             System.Object[] years = new System.Object[122];
             for (int i = 0; i <= 121; i++)
             {
-                years[i] = i + 1920;
+                years[i] = i + 1930;
             }
             cmb_Year.Items.AddRange(years);
         }
@@ -213,39 +215,24 @@ namespace Contact_Tracing_Form
                 lbl_Req2.Visible = true;
                 lbl_Status.Visible = true;
             }
-            if(address == false || lbl_Status.Visible == false)
+            if(address == false)
             {
                 lbl_Req3.Visible = true;
                 lbl_Status.Visible = true;
             }
-            if(day == false || lbl_Status.Visible == false)
+            if (time == false)
             {
-                lbl_Req4.Visible = true;
+                lbl_Req6.Visible = true;
                 lbl_Status.Visible = true;
             }
-            if(month == false || lbl_Status.Visible == false)
+            if (spec_Time == false)
             {
-                lbl_Req4.Visible = true;
+                lbl_Req6.Visible = true;
                 lbl_Status.Visible = true;
             }
-            if(year == false || lbl_Status.Visible == false)
-            {
-                lbl_Req4.Visible = true;
-                lbl_Status.Visible = true;
-            }
-            if((contact_Info1 == false && contact_Info2 == false) || lbl_Status.Visible == false)
-            {
+            if((contact_Info1 == false && contact_Info2 == false))
+            { 
                 lbl_Req5.Visible = true;
-                lbl_Status.Visible = true;
-            }
-            if(time == false || lbl_Status.Visible == false)
-            {
-                lbl_Req6.Visible = true;
-                lbl_Status.Visible = true;
-            }
-            if(spec_Time == false || lbl_Status.Visible == false)
-            {
-                lbl_Req6.Visible = true;
                 lbl_Status.Visible = true;
             }
             else
