@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System 
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -47,7 +46,6 @@ namespace Contact_Tracing_Form
             lbl_Req1.Visible = false;
             lbl_Req2.Visible = false;
             lbl_Req3.Visible = false;
-            lbl_Req4.Visible = false;
             lbl_Req5.Visible = false;
             lbl_Req6.Visible = false;
             lbl_Status.Visible = false;
@@ -241,8 +239,8 @@ namespace Contact_Tracing_Form
                 savedInfo = File.CreateText("saved.txt");
                 savedInfo.WriteLine("Name: " + txtbx_FName.Text + txtbx_LName.Text);
                 savedInfo.WriteLine("Address: " + txtbx_Address.Text);
-                savedInfo.WriteLine("Birthday: " + cmb_Month.Text + ", " + cmb_Day + cmb_Year);
-
+                savedInfo.WriteLine("Birthday: " + cmb_Month.SelectedIndex + ", " + cmb_Day.SelectedIndex + cmb_Year.SelectedIndex);
+                savedInfo.Close();
             }
         }
     }

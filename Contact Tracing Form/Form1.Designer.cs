@@ -53,7 +53,6 @@ namespace Contact_Tracing_Form
             this.lbl_Req1 = new System.Windows.Forms.Label();
             this.lbl_Req2 = new System.Windows.Forms.Label();
             this.lbl_Req3 = new System.Windows.Forms.Label();
-            this.lbl_Req4 = new System.Windows.Forms.Label();
             this.lbl_Req5 = new System.Windows.Forms.Label();
             this.lbl_Req6 = new System.Windows.Forms.Label();
             this.lbl_Status = new System.Windows.Forms.Label();
@@ -289,18 +288,6 @@ namespace Contact_Tracing_Form
             this.lbl_Req3.Text = "*";
             this.lbl_Req3.Visible = false;
             // 
-            // lbl_Req4
-            // 
-            this.lbl_Req4.AutoSize = true;
-            this.lbl_Req4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_Req4.ForeColor = System.Drawing.Color.Red;
-            this.lbl_Req4.Location = new System.Drawing.Point(386, 176);
-            this.lbl_Req4.Name = "lbl_Req4";
-            this.lbl_Req4.Size = new System.Drawing.Size(17, 22);
-            this.lbl_Req4.TabIndex = 24;
-            this.lbl_Req4.Text = "*";
-            this.lbl_Req4.Visible = false;
-            // 
             // lbl_Req5
             // 
             this.lbl_Req5.AutoSize = true;
@@ -345,7 +332,6 @@ namespace Contact_Tracing_Form
             this.Controls.Add(this.lbl_Status);
             this.Controls.Add(this.lbl_Req6);
             this.Controls.Add(this.lbl_Req5);
-            this.Controls.Add(this.lbl_Req4);
             this.Controls.Add(this.lbl_Req3);
             this.Controls.Add(this.lbl_Req2);
             this.Controls.Add(this.lbl_Req1);
@@ -404,7 +390,6 @@ namespace Contact_Tracing_Form
         private System.Windows.Forms.Label lbl_Req1;
         private System.Windows.Forms.Label lbl_Req2;
         private System.Windows.Forms.Label lbl_Req3;
-        private System.Windows.Forms.Label lbl_Req4;
         private System.Windows.Forms.Label lbl_Req5;
         private System.Windows.Forms.Label lbl_Req6;
         private System.Windows.Forms.Label lbl_Status;
