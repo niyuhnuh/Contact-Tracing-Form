@@ -245,9 +245,27 @@ namespace Contact_Tracing_Form
                 savedInfo.WriteLine("Time Logged: " + txtbx_Time.Text + " " + cmb_AMPM.SelectedItem);
                 savedInfo.Close();
 
-                Form form_Read = new Form();
-                form_Read.Visible = true;
-
+                txtbx_FName.Text = "";
+                txtbx_LName.Text = "";
+                txtbx_Address.Text = "";
+                txtbx_Gender.Text = "";
+                txtbx_Contact1.Text = "";
+                txtbx_Contact2.Text = "";
+                txtbx_Time.Text = "";
+                cmb_Day.Items.Clear();
+                cmb_Day.ResetText();
+                cmb_Month.Items.Clear();
+                cmb_Month.ResetText();
+                cmb_Year.Items.Clear();
+                cmb_Year.ResetText();
+                cmb_AMPM.Items.Clear();
+                cmb_AMPM.ResetText();
+                lbl_Req1.Visible = false;
+                lbl_Req2.Visible = false;
+                lbl_Req3.Visible = false;
+                lbl_Req5.Visible = false;
+                lbl_Req6.Visible = false;
+                lbl_Status.Visible = false;
             }
         }
     }
