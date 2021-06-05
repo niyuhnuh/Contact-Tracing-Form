@@ -139,7 +139,15 @@ namespace Contact_Tracing_Form
         private void cmb_Month_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbMonths();
-            month = true;
+            if (cmb_Month.SelectedIndex > -1)
+            {
+                month = true;
+            }
+            else
+            {
+                month = false;
+            }
+            
         }
 
         private void cmbMonths()
@@ -161,7 +169,14 @@ namespace Contact_Tracing_Form
         private void cmb_Year_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbYears();
-            year = true;
+            if (cmb_Year.SelectedIndex > -1)
+            {
+                year = true;
+            }
+            else
+            {
+                year = false;
+            }
         }
 
         private void cmbYears()
