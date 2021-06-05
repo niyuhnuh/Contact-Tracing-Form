@@ -48,6 +48,7 @@ namespace Contact_Tracing_Form
             lbl_Req4.Visible = false;
             lbl_Req5.Visible = false;
             lbl_Req6.Visible = false;
+            lbl_Status.Visible = false;
         }
 
         private void cmbDays()
