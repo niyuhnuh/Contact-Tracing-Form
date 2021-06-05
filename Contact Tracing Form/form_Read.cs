@@ -21,16 +21,17 @@ namespace Contact_Tracing_Form
         private void form_Read_Load(object sender, EventArgs e)
         {
             DataTable saved = new DataTable();
+            string[] column_Names = new string[] { "First Name", "Last Name", "Address", "Birthdate", "Gender", "Contact Information", "Time Logged"};
 
             List<string> info = new List<string>();
             using (StreamReader readInfo = File.OpenText(@"C:\Users\Annie-Max\source\repos\Contact Tracing Form\Contact Tracing Form\bin\Debug\netcoreapp3.1"))
             {
-                while(!readInfo.EndOfStream)
+                while (!readInfo.EndOfStream)
                 {
                     info.Add(readInfo.ReadLine());
-                    foreach (string r in info)
+                    for(int x = 0; x < 8; x++)
                     {
-                        saved.Rows.Add(r);
+                        col
                     }
                 }
             }
