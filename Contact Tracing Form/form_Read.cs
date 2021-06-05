@@ -18,6 +18,8 @@ namespace Contact_Tracing_Form
 
         private void form_Read_Load(object sender, EventArgs e)
         {
+            dg_SavedInfo.DataSource = tb_SavedInfo;
+
             tb_SavedInfo.Columns.Add("First Name");
             tb_SavedInfo.Columns.Add("Last Name");
             tb_SavedInfo.Columns.Add("Address");

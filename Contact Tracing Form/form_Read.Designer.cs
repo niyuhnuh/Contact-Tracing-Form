@@ -35,6 +35,11 @@ namespace Contact_Tracing_Form
             // 
             // dg_SavedInfo
             // 
+            this.dg_SavedInfo.AllowUserToAddRows = false;
+            this.dg_SavedInfo.AllowUserToDeleteRows = false;
+            this.dg_SavedInfo.AllowUserToResizeColumns = false;
+            this.dg_SavedInfo.AllowUserToResizeRows = false;
+            this.dg_SavedInfo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dg_SavedInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_SavedInfo.Location = new System.Drawing.Point(12, 12);
             this.dg_SavedInfo.Name = "dg_SavedInfo";
