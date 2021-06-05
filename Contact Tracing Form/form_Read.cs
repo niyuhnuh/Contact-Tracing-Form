@@ -20,6 +20,7 @@ namespace Contact_Tracing_Form
 
         private void form_Read_Load(object sender, EventArgs e)
         {
+            DataTable saved = new DataTable();
 
             List<string> info = new List<string>();
             using (StreamReader readInfo = File.OpenText("saved.txt"))
@@ -30,10 +31,12 @@ namespace Contact_Tracing_Form
                 }
             }
 
-            string [] row =  new string []
-            dg_SavedInfo.DataSource = tb_SavedInfo;
+            foreach (string r in info)
+            {
+                saved.Rows.Add(r);
+            }
+         
 
-           
         }
     }
 }
