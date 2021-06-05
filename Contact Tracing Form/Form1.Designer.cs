@@ -56,7 +56,7 @@ namespace Contact_Tracing_Form
             this.lbl_Req4 = new System.Windows.Forms.Label();
             this.lbl_Req5 = new System.Windows.Forms.Label();
             this.lbl_Req6 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_Status = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_Title
@@ -325,24 +325,24 @@ namespace Contact_Tracing_Form
             this.lbl_Req6.Text = "*";
             this.lbl_Req6.Visible = false;
             // 
-            // label1
+            // lbl_Status
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(12, 293);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(211, 38);
-            this.label1.TabIndex = 27;
-            this.label1.Text = "* Required fields. \r\nPlease do not leave empty.";
-            this.label1.Visible = false;
+            this.lbl_Status.AutoSize = true;
+            this.lbl_Status.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Status.ForeColor = System.Drawing.Color.Red;
+            this.lbl_Status.Location = new System.Drawing.Point(12, 293);
+            this.lbl_Status.Name = "lbl_Status";
+            this.lbl_Status.Size = new System.Drawing.Size(211, 38);
+            this.lbl_Status.TabIndex = 27;
+            this.lbl_Status.Text = "* Required fields. \r\nPlease do not leave empty.";
+            this.lbl_Status.Visible = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(465, 347);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_Status);
             this.Controls.Add(this.lbl_Req6);
             this.Controls.Add(this.lbl_Req5);
             this.Controls.Add(this.lbl_Req4);
@@ -407,7 +407,7 @@ namespace Contact_Tracing_Form
         private System.Windows.Forms.Label lbl_Req4;
         private System.Windows.Forms.Label lbl_Req5;
         private System.Windows.Forms.Label lbl_Req6;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_Status;
     }
 }
 

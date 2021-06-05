@@ -42,6 +42,12 @@ namespace Contact_Tracing_Form
             cmb_Year.ResetText();
             cmb_AMPM.Items.Clear();
             cmb_AMPM.ResetText();
+            lbl_Req1.Visible = false;
+            lbl_Req2.Visible = false;
+            lbl_Req3.Visible = false;
+            lbl_Req4.Visible = false;
+            lbl_Req5.Visible = false;
+            lbl_Req6.Visible = false;
         }
 
         private void cmbDays()
