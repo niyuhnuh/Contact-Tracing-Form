@@ -28,14 +28,12 @@ namespace Contact_Tracing_Form
                 while(!readInfo.EndOfStream)
                 {
                     info.Add(readInfo.ReadLine());
+                    foreach (string r in info)
+                    {
+                        saved.Rows.Add(r);
+                    }
                 }
             }
-
-            foreach (string r in info)
-            {
-                saved.Rows.Add(r);
-            }
-         
 
         }
     }
