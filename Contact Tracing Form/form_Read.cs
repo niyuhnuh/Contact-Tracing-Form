@@ -19,7 +19,10 @@ namespace Contact_Tracing_Form
 
         private void form_Read_Load(object sender, EventArgs e)
         {
-            
+            DataTable savedInfo = new DataTable();
+            DataColumn dt_Column;
+            DataRow dt_Row;
+
         }
     }
 }
