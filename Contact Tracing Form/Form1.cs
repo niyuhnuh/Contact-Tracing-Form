@@ -84,22 +84,42 @@ namespace Contact_Tracing_Form
 
         private void txtbx_Address_TextChanged(object sender, EventArgs e)
         {
-            address = true;
+            if (txtbx_Address.Text == "")
+                address = false;
+            else
+            {
+                address = true;
+            }
         }
 
         private void txtbx_Contact1_TextChanged(object sender, EventArgs e)
         {
-            contact_Info1 = true;
+            if (txtbx_Contact1.Text == "")
+                contact_Info1 = false;
+            else
+            {
+                contact_Info1 = true;
+            }
         }
 
         private void txtbx_Time_TextChanged(object sender, EventArgs e)
         {
-            spec_Time = true;
+            if (txtbx_Time.Text == "")
+                spec_Time = true;
+            else
+            {
+                spec_Time = true;
+            }
         }
 
         private void txtbx_Contact2_TextChanged(object sender, EventArgs e)
         {
-            contact_Info2 = true; 
+            if (txtbx_Contact2.Text == "")
+                contact_Info2 = false;
+            else
+            {
+                contact_Info2 = true;
+            }
         }
 
         private void cmb_Day_SelectedIndexChanged(object sender, EventArgs e)
