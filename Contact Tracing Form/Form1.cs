@@ -125,7 +125,15 @@ namespace Contact_Tracing_Form
         private void cmb_Day_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbDays();
-            day = true;
+            if (cmb_Day.SelectedIndex > -1)
+            {
+                day = true;
+            }
+            else
+            {
+                day = false;
+            }
+            
         }
 
         private void cmb_Month_SelectedIndexChanged(object sender, EventArgs e)
@@ -180,12 +188,12 @@ namespace Contact_Tracing_Form
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
-            if (f_Name == false || lbl_Status.Visible == false)
+            if (f_Name == false)
             {
                 lbl_Req1.Visible = true;
                 lbl_Status.Visible = true;
             }
-            if(l_Name == false || lbl_Status.Visible == false)
+            if(l_Name == false)
             {
                 lbl_Req2.Visible = true;
                 lbl_Status.Visible = true;
