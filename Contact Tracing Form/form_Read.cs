@@ -23,7 +23,7 @@ namespace Contact_Tracing_Form
             DataTable saved = new DataTable();
 
             List<string> info = new List<string>();
-            using (StreamReader readInfo = File.OpenText("saved.txt"))
+            using (StreamReader readInfo = File.OpenText(@"C:\Users\Annie-Max\source\repos\Contact Tracing Form\Contact Tracing Form\bin\Debug\netcoreapp3.1"))
             {
                 while(!readInfo.EndOfStream)
                 {
