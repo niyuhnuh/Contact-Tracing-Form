@@ -210,12 +210,7 @@ namespace Contact_Tracing_Form
                 lbl_Req4.Visible = true;
                 lbl_Status.Visible = true;
             }
-            if(contact_Info1 == false || lbl_Status.Visible == false)
-            {
-                lbl_Req5.Visible = true;
-                lbl_Status.Visible = true;
-            }
-            if(contact_Info2 == false || lbl_Status.Visible == false)
+            if((contact_Info1 == false && contact_Info2 == false) || lbl_Status.Visible == false)
             {
                 lbl_Req5.Visible = true;
                 lbl_Status.Visible = true;
