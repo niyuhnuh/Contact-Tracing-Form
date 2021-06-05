@@ -268,6 +268,9 @@ namespace Contact_Tracing_Form
                 lbl_Status.Visible = false;
 
                 this.Hide();
+
+                Form form_Read = new Form();
+                form_Read.Show();
             }
         }
     }
