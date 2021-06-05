@@ -19,17 +19,8 @@ namespace Contact_Tracing_Form
 
         private void form_Read_Load(object sender, EventArgs e)
         {
-            DataTable savedInfo = new DataTable("Saved Information");
-            DataColumn dt_Column;
+            
 
-
-            dt_Column = new DataColumn();
-            dt_Column.DataType = typeof(string);
-            dt_Column.ColumnName = "First Name";
-
-            dt_Column = new DataColumn();
-            dt_Column.DataType = typeof(string);
-            dt_Column.ColumnName = "Last Name";
 
         
         }
