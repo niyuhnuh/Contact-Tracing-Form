@@ -19,10 +19,18 @@ namespace Contact_Tracing_Form
 
         private void form_Read_Load(object sender, EventArgs e)
         {
-            
+
+            List<string> info = new List<string>();
+            using (StreamReader readInfo = File.OpenText(@"C:\Users\Annie-Max\source\repos\Contact Tracing Form\Contact Tracing Form\bin\Debug\netcoreapp3.1"))
+            {
+                while (!readInfo.EndOfStream)
+                {
+                    info.Add(readInfo.ReadLine());
+
+                }
+            }
 
 
-        
         }
     }
 }
