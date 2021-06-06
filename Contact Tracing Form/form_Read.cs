@@ -33,13 +33,23 @@ namespace Contact_Tracing_Form
             //string[] info_Saved = info.ToArray();
             string[] info_Saved = { "First Name", "Last Name", "Address", "Birthdate",
                                     "Gender", "Contact Info1", "Contact Info2", "Time Logged", "ABC"};
- 
-            foreach (string column_Name in info_Saved)
+
+
+            DataColumn col;
+
+            col = new DataColumn();
+            col.ColumnName = "First Name";
+
+
+
+            //foreach (string column_Name in info_Saved)
             {
-                StreamWriter columns;
-                columns = File.CreateText("col.txt");
-                columns.WriteLine(column_Name);
-                columns.Close();
+               
+
+                //StreamWriter columns;
+                //columns = File.CreateText("col.txt");
+                //columns.WriteLine(column_Name);
+                //columns.Close();
 
                 //string[] info_Rows = new string[data.Length];
                // for (int y = 0; y < data.Length; y++)
