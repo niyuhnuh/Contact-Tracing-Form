@@ -32,11 +32,11 @@ namespace Contact_Tracing_Form
             }
             //string[] info_Saved = info.ToArray();
             string[] info_Saved = { "First Name", "Last Name", "Address", "Birthdate",
-                                    "Gender", "Contact Info1", "Contact Info2", "Time Logged" };
+                                    "Gender", "Contact Info1", "Contact Info2", "Time Logged", "ABC"};
             string[] data;
-            for (int x = 0; x < info_Saved.Length; x++)
+            foreach (string column_Name in info_Saved)
             {
-                data = info_Saved[x].ToString().Split(',');
+                data = info_Saved.ToString().Split(',');
 
                 string[] info_Rows = new string[data.Length];
                 for (int y = 0; y < data.Length; y++)
