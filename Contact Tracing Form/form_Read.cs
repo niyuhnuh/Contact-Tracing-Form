@@ -34,6 +34,12 @@ namespace Contact_Tracing_Form
             for (int x = 0; x < info_Saved.Length; x++)
             {
                 data = info_Saved[x].ToString().Split(',');
+
+                string[] info_Rows = new string[data.Length];
+                for (int y = 0; y < data.Length; y++)
+                {
+                    info_Rows[y] = data[y].Trim();
+                }
             }
 
         }
