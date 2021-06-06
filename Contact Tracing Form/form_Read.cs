@@ -19,6 +19,7 @@ namespace Contact_Tracing_Form
 
         private void form_Read_Load(object sender, EventArgs e)
         {
+            DataTable savedInfo = new DataTable("Saved Information");
 
             List<string> info = new List<string>();
             using (StreamReader readInfo = File.OpenText(@"C:\Users\Annie-Max\source\repos\Contact Tracing Form\Contact Tracing Form\bin\Debug\netcoreapp3.1"))
@@ -40,6 +41,7 @@ namespace Contact_Tracing_Form
                 {
                     info_Rows[y] = data[y].Trim();
                 }
+                savedInfo.Rows.Add(info_Rows);
             }
 
         }
