@@ -33,7 +33,7 @@ namespace Contact_Tracing_Form
             string[] data;
             for (int x = 0; x < info_Saved.Length; x++)
             {
-                data = info_Saved[x].ToString
+                data = info_Saved[x].ToString().Split(',');
             }
 
         }
