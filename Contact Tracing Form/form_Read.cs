@@ -30,7 +30,8 @@ namespace Contact_Tracing_Form
 
                 }
             }
-            string[] info_Saved = info.ToArray();
+            //string[] info_Saved = info.ToArray();
+            string[] info_Saved = { "First Name", "Last Name", "Address", "Birthdate", "" };
             string[] data;
             for (int x = 0; x < info_Saved.Length; x++)
             {
