@@ -37,6 +37,10 @@ namespace Contact_Tracing_Form
             foreach (string column_Name in info_Saved)
             {
                 data = info_Saved.ToString().Split(',');
+                StreamWriter data_File;
+                data_File = File.CreateText("data.txt");
+                data_File.WriteLine(data);
+                data_File.Close();
 
                 string[] info_Rows = new string[data.Length];
                 for (int y = 0; y < data.Length; y++)
