@@ -42,8 +42,9 @@ namespace Contact_Tracing_Form
                 for (int y = 0; y < data.Length; y++)
                 {
                     info_Rows[y] = data[y].Trim();
+                    savedInfo.Rows.Add(info_Rows);
                 }
-                savedInfo.Rows.Add(info_Rows);
+                
             }
 
         }
