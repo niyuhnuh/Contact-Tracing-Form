@@ -20,7 +20,11 @@ namespace Contact_Tracing_Form
         private void form_Read_Load(object sender, EventArgs e)
         {
 
-           
+            StreamReader infoSaved = new StreamReader(@"saved.txt");
+            string[] data = new string[8];
+
+
+
         }
     }
 }
