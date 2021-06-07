@@ -19,7 +19,6 @@ namespace Contact_Tracing_Form
 
         private void form_Read_Load(object sender, EventArgs e)
         {
-            DataTable savedInfo = new DataTable("Saved Information");
 
             List<string> info = new List<string>();
             using (StreamReader readInfo = File.OpenText(@"saved.txt"))
@@ -27,18 +26,22 @@ namespace Contact_Tracing_Form
                 while (!readInfo.EndOfStream)
                 {
                     info.Add(readInfo.ReadLine());
-
+                    //For checking only
+                    StreamWriter info_R;
+                    info_R = File.CreateText("info_R.txt");
+                    info_R.WriteLine(info);
+                    //
                 }
             }
+
+            
+
+           // DataTable savedInfo = new DataTable("Saved Information");
             //string[] info_Saved = info.ToArray();
-            string[] info_Saved = { "First Name", "Last Name", "Address", "Birthdate",
-                                    "Gender", "Contact Info1", "Contact Info2", "Time Logged", "ABC"};
+           // string[] info_Saved = { "First Name", "Last Name", "Address", "Birthdate",
+                                    //"Gender", "Contact Info1", "Contact Info2", "Time Logged", "ABC"};
 
 
-            DataColumn col;
-
-            col = new DataColumn();
-            col.ColumnName = "First Name";
 
 
 
