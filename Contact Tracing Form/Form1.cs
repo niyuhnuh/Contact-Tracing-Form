@@ -235,13 +235,6 @@ namespace Contact_Tracing_Form
             }
             else
             {
-                //Column names for data table
-                StreamWriter columnNames;
-                columnNames = File.CreateText("columns.txt");
-                columnNames.WriteLine(lbl_FName.Text + "," + lbl_LName.Text + "," + lbl_Address.Text + "," 
-                    + lbl_Birthday.Text + "," + lbl_Contact.Text + "," + lbl_Gender.Text + "," + lbl_Time.Text + ",");
-                columnNames.Close();
-
 
                 //Data from user
                 StreamWriter savedInfo;
