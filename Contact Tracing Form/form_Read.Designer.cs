@@ -30,7 +30,13 @@ namespace Contact_Tracing_Form
         private void InitializeComponent()
         {
             this.dg_SavedInfo = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.col_FName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_LName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_Birthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_ContactInf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dg_SavedInfo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,27 +48,67 @@ namespace Contact_Tracing_Form
             this.dg_SavedInfo.AllowUserToResizeRows = false;
             this.dg_SavedInfo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dg_SavedInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dg_SavedInfo.Location = new System.Drawing.Point(12, 211);
+            this.dg_SavedInfo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.col_FName,
+            this.col_LName,
+            this.col_Address,
+            this.col_Birthday,
+            this.col_Gender,
+            this.col_ContactInf,
+            this.col_Time});
+            this.dg_SavedInfo.Location = new System.Drawing.Point(12, 22);
             this.dg_SavedInfo.Name = "dg_SavedInfo";
             this.dg_SavedInfo.RowTemplate.Height = 25;
-            this.dg_SavedInfo.Size = new System.Drawing.Size(440, 125);
+            this.dg_SavedInfo.Size = new System.Drawing.Size(440, 314);
             this.dg_SavedInfo.TabIndex = 0;
             // 
-            // button1
+            // col_FName
             // 
-            this.button1.Location = new System.Drawing.Point(53, 75);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 61);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "BUTTON";
-            this.button1.UseVisualStyleBackColor = true;
+            this.col_FName.HeaderText = "First Name";
+            this.col_FName.Name = "col_FName";
+            this.col_FName.ReadOnly = true;
+            // 
+            // col_LName
+            // 
+            this.col_LName.HeaderText = "Last Name";
+            this.col_LName.Name = "col_LName";
+            this.col_LName.ReadOnly = true;
+            // 
+            // col_Address
+            // 
+            this.col_Address.HeaderText = "Address";
+            this.col_Address.Name = "col_Address";
+            this.col_Address.ReadOnly = true;
+            // 
+            // col_Birthday
+            // 
+            this.col_Birthday.HeaderText = "Birthday";
+            this.col_Birthday.Name = "col_Birthday";
+            this.col_Birthday.ReadOnly = true;
+            // 
+            // col_Gender
+            // 
+            this.col_Gender.HeaderText = "Gender";
+            this.col_Gender.Name = "col_Gender";
+            this.col_Gender.ReadOnly = true;
+            // 
+            // col_ContactInf
+            // 
+            this.col_ContactInf.HeaderText = "Contact Information";
+            this.col_ContactInf.Name = "col_ContactInf";
+            this.col_ContactInf.ReadOnly = true;
+            // 
+            // col_Time
+            // 
+            this.col_Time.HeaderText = "Time Logged";
+            this.col_Time.Name = "col_Time";
+            this.col_Time.ReadOnly = true;
             // 
             // form_Read
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(464, 348);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.dg_SavedInfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "form_Read";
@@ -76,6 +122,12 @@ namespace Contact_Tracing_Form
         #endregion
 
         private System.Windows.Forms.DataGridView dg_SavedInfo;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_FName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_LName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_Address;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_Birthday;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_Gender;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_ContactInf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_Time;
     }
 }

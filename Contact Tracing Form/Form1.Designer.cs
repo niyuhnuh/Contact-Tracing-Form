@@ -30,7 +30,7 @@ namespace Contact_Tracing_Form
         private void InitializeComponent()
         {
             this.lbl_Title = new System.Windows.Forms.Label();
-            this.lbl_Name = new System.Windows.Forms.Label();
+            this.lbl_LName = new System.Windows.Forms.Label();
             this.lbl_Address = new System.Windows.Forms.Label();
             this.lbl_Birthday = new System.Windows.Forms.Label();
             this.cmb_Day = new System.Windows.Forms.ComboBox();
@@ -68,15 +68,15 @@ namespace Contact_Tracing_Form
             this.lbl_Title.TabIndex = 0;
             this.lbl_Title.Text = "Contact Tracing Form";
             // 
-            // lbl_Name
+            // lbl_LName
             // 
-            this.lbl_Name.AutoSize = true;
-            this.lbl_Name.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_Name.Location = new System.Drawing.Point(66, 111);
-            this.lbl_Name.Name = "lbl_Name";
-            this.lbl_Name.Size = new System.Drawing.Size(114, 22);
-            this.lbl_Name.TabIndex = 1;
-            this.lbl_Name.Text = "Last Name:";
+            this.lbl_LName.AutoSize = true;
+            this.lbl_LName.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_LName.Location = new System.Drawing.Point(66, 111);
+            this.lbl_LName.Name = "lbl_LName";
+            this.lbl_LName.Size = new System.Drawing.Size(114, 22);
+            this.lbl_LName.TabIndex = 1;
+            this.lbl_LName.Text = "Last Name:";
             // 
             // lbl_Address
             // 
@@ -354,7 +354,7 @@ namespace Contact_Tracing_Form
             this.Controls.Add(this.cmb_Day);
             this.Controls.Add(this.lbl_Birthday);
             this.Controls.Add(this.lbl_Address);
-            this.Controls.Add(this.lbl_Name);
+            this.Controls.Add(this.lbl_LName);
             this.Controls.Add(this.lbl_Title);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "form_Registration";
@@ -367,7 +367,7 @@ namespace Contact_Tracing_Form
         #endregion
 
         private System.Windows.Forms.Label lbl_Title;
-        private System.Windows.Forms.Label lbl_Name;
+        private System.Windows.Forms.Label lbl_LName;
         private System.Windows.Forms.Label lbl_Address;
         private System.Windows.Forms.Label lbl_Birthday;
         private System.Windows.Forms.ComboBox cmb_Day;
