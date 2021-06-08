@@ -328,6 +328,7 @@ namespace Contact_Tracing_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(465, 347);
             this.Controls.Add(this.lbl_Status);
             this.Controls.Add(this.lbl_Req6);

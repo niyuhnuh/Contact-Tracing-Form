@@ -241,7 +241,7 @@ namespace Contact_Tracing_Form
                 savedInfo = File.CreateText("saved.txt");
                 savedInfo.WriteLine(txtbx_FName.Text +", " + txtbx_LName.Text + ", " + txtbx_Address.Text + ", "
                     + "" + cmb_Month.SelectedItem + " " + cmb_Day.SelectedItem + " " + cmb_Year.SelectedItem + ", " +
-                    txtbx_Gender.Text + ", " + txtbx_Contact1.Text, txtbx_Contact2.Text + ", " + txtbx_Time.Text + " " +  cmb_AMPM.SelectedItem + ", ");
+                    txtbx_Gender.Text + ", " + txtbx_Contact1.Text + " | " + txtbx_Contact2.Text + ", " + txtbx_Time.Text + " " +  cmb_AMPM.SelectedItem + ", ");
                
                 savedInfo.Close();
 

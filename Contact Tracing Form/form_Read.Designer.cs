@@ -46,7 +46,8 @@ namespace Contact_Tracing_Form
             this.dg_SavedInfo.AllowUserToDeleteRows = false;
             this.dg_SavedInfo.AllowUserToResizeColumns = false;
             this.dg_SavedInfo.AllowUserToResizeRows = false;
-            this.dg_SavedInfo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dg_SavedInfo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dg_SavedInfo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dg_SavedInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_SavedInfo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.col_FName,
@@ -60,7 +61,7 @@ namespace Contact_Tracing_Form
             this.dg_SavedInfo.Name = "dg_SavedInfo";
             this.dg_SavedInfo.ReadOnly = true;
             this.dg_SavedInfo.RowTemplate.Height = 25;
-            this.dg_SavedInfo.Size = new System.Drawing.Size(440, 314);
+            this.dg_SavedInfo.Size = new System.Drawing.Size(647, 314);
             this.dg_SavedInfo.TabIndex = 0;
             // 
             // col_FName
@@ -68,48 +69,55 @@ namespace Contact_Tracing_Form
             this.col_FName.HeaderText = "First Name";
             this.col_FName.Name = "col_FName";
             this.col_FName.ReadOnly = true;
+            this.col_FName.Width = 82;
             // 
             // col_LName
             // 
             this.col_LName.HeaderText = "Last Name";
             this.col_LName.Name = "col_LName";
             this.col_LName.ReadOnly = true;
+            this.col_LName.Width = 81;
             // 
             // col_Address
             // 
             this.col_Address.HeaderText = "Address";
             this.col_Address.Name = "col_Address";
             this.col_Address.ReadOnly = true;
+            this.col_Address.Width = 74;
             // 
             // col_Birthday
             // 
             this.col_Birthday.HeaderText = "Birthday";
             this.col_Birthday.Name = "col_Birthday";
             this.col_Birthday.ReadOnly = true;
+            this.col_Birthday.Width = 76;
             // 
             // col_Gender
             // 
             this.col_Gender.HeaderText = "Gender";
             this.col_Gender.Name = "col_Gender";
             this.col_Gender.ReadOnly = true;
+            this.col_Gender.Width = 70;
             // 
             // col_ContactInf
             // 
             this.col_ContactInf.HeaderText = "Contact Information";
             this.col_ContactInf.Name = "col_ContactInf";
             this.col_ContactInf.ReadOnly = true;
+            this.col_ContactInf.Width = 128;
             // 
             // col_Time
             // 
             this.col_Time.HeaderText = "Time Logged";
             this.col_Time.Name = "col_Time";
             this.col_Time.ReadOnly = true;
+            this.col_Time.Width = 93;
             // 
             // form_Read
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(464, 348);
+            this.ClientSize = new System.Drawing.Size(674, 343);
             this.Controls.Add(this.dg_SavedInfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "form_Read";
