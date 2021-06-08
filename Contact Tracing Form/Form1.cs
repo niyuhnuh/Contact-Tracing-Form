@@ -208,27 +208,27 @@ namespace Contact_Tracing_Form
                 lbl_Req1.Visible = true;
                 lbl_Status.Visible = true;
             }
-            if(l_Name == false)
+            else if(l_Name == false)
             {
                 lbl_Req2.Visible = true;
                 lbl_Status.Visible = true;
             }
-            if(address == false)
+            else if(address == false)
             {
                 lbl_Req3.Visible = true;
                 lbl_Status.Visible = true;
             }
-            if (time == false)
+            else  if (time == false)
             {
                 lbl_Req6.Visible = true;
                 lbl_Status.Visible = true;
             }
-            if (spec_Time == false)
+            else if (spec_Time == false)
             {
                 lbl_Req6.Visible = true;
                 lbl_Status.Visible = true;
             }
-            if((contact_Info1 == false && contact_Info2 == false))
+            else if((contact_Info1 == false && contact_Info2 == false))
             { 
                 lbl_Req5.Visible = true;
                 lbl_Status.Visible = true;
