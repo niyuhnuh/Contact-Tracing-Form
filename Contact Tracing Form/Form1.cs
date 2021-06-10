@@ -262,6 +262,7 @@ namespace Contact_Tracing_Form
                 txtbx_Contact1.Text = "";
                 txtbx_Contact2.Text = "";
                 txtbx_Time.Text = "";
+                txtbx_Age.Text = "";
                 cmb_Day.Items.Clear();
                 cmb_Day.ResetText();
                 cmb_Month.Items.Clear();
@@ -273,6 +274,7 @@ namespace Contact_Tracing_Form
                 lbl_Req1.Visible = false;
                 lbl_Req2.Visible = false;
                 lbl_Req3.Visible = false;
+                lbl_Req4.Visible = false;
                 lbl_Req5.Visible = false;
                 lbl_Req6.Visible = false;
                 lbl_Status.Visible = false;

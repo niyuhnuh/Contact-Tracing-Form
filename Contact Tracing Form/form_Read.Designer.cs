@@ -35,6 +35,7 @@ namespace Contact_Tracing_Form
             this.col_Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_Birthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_Age = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_ContactInf = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dg_SavedInfo)).BeginInit();
@@ -55,13 +56,14 @@ namespace Contact_Tracing_Form
             this.col_Address,
             this.col_Birthday,
             this.col_Gender,
+            this.col_Age,
             this.col_ContactInf,
             this.col_Time});
             this.dg_SavedInfo.Location = new System.Drawing.Point(12, 22);
             this.dg_SavedInfo.Name = "dg_SavedInfo";
             this.dg_SavedInfo.ReadOnly = true;
             this.dg_SavedInfo.RowTemplate.Height = 25;
-            this.dg_SavedInfo.Size = new System.Drawing.Size(647, 314);
+            this.dg_SavedInfo.Size = new System.Drawing.Size(694, 314);
             this.dg_SavedInfo.TabIndex = 0;
             // 
             // col_FName
@@ -69,14 +71,14 @@ namespace Contact_Tracing_Form
             this.col_FName.HeaderText = "First Name";
             this.col_FName.Name = "col_FName";
             this.col_FName.ReadOnly = true;
-            this.col_FName.Width = 82;
+            this.col_FName.Width = 89;
             // 
             // col_LName
             // 
             this.col_LName.HeaderText = "Last Name";
             this.col_LName.Name = "col_LName";
             this.col_LName.ReadOnly = true;
-            this.col_LName.Width = 81;
+            this.col_LName.Width = 88;
             // 
             // col_Address
             // 
@@ -99,6 +101,13 @@ namespace Contact_Tracing_Form
             this.col_Gender.ReadOnly = true;
             this.col_Gender.Width = 70;
             // 
+            // col_Age
+            // 
+            this.col_Age.HeaderText = "Age";
+            this.col_Age.Name = "col_Age";
+            this.col_Age.ReadOnly = true;
+            this.col_Age.Width = 53;
+            // 
             // col_ContactInf
             // 
             this.col_ContactInf.HeaderText = "Contact Information";
@@ -117,7 +126,7 @@ namespace Contact_Tracing_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(674, 343);
+            this.ClientSize = new System.Drawing.Size(718, 343);
             this.Controls.Add(this.dg_SavedInfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "form_Read";
@@ -136,6 +145,7 @@ namespace Contact_Tracing_Form
         private System.Windows.Forms.DataGridViewTextBoxColumn col_Address;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_Birthday;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_Gender;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_Age;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_ContactInf;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_Time;
     }
