@@ -241,6 +241,8 @@ namespace Contact_Tracing_Form
                 lbl_Status.Visible = true;
             }
 
+        
+
             else
             {
 
