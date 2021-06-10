@@ -201,6 +201,8 @@ namespace Contact_Tracing_Form
             cmb_AMPM.Items.Add("PM");
         }
 
+     
+
         private void btn_Save_Click(object sender, EventArgs e)
         {
             if (f_Name == false)
@@ -208,31 +210,37 @@ namespace Contact_Tracing_Form
                 lbl_Req1.Visible = true;
                 lbl_Status.Visible = true;
             }
-            else if(l_Name == false)
+
+            if(l_Name == false)
             {
                 lbl_Req2.Visible = true;
                 lbl_Status.Visible = true;
             }
-            else if(address == false)
+
+            if(address == false)
             {
                 lbl_Req3.Visible = true;
                 lbl_Status.Visible = true;
             }
-            else  if (time == false)
+
+            if (time == false)
             {
                 lbl_Req6.Visible = true;
                 lbl_Status.Visible = true;
             }
-            else if (spec_Time == false)
+
+            if (spec_Time == false)
             {
                 lbl_Req6.Visible = true;
                 lbl_Status.Visible = true;
             }
-            else if((contact_Info1 == false && contact_Info2 == false))
+
+            if((contact_Info1 == false && contact_Info2 == false))
             { 
                 lbl_Req5.Visible = true;
                 lbl_Status.Visible = true;
             }
+
             else
             {
 
