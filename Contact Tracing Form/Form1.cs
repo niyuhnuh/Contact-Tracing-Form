@@ -246,7 +246,7 @@ namespace Contact_Tracing_Form
 
                 //Data from user
                 StreamWriter savedInfo;
-                savedInfo = File.CreateText("saved.txt");
+                savedInfo = File.AppendText("saved.txt");
                 savedInfo.WriteLine(txtbx_FName.Text +", " + txtbx_LName.Text + ", " + txtbx_Address.Text + ", "
                     + "" + cmb_Month.SelectedItem + " " + cmb_Day.SelectedItem + " " + cmb_Year.SelectedItem + ", " +
                     txtbx_Gender.Text + ", " + txtbx_Contact1.Text + " | " + txtbx_Contact2.Text + ", " + txtbx_Time.Text + " " +  cmb_AMPM.SelectedItem + ", ");
