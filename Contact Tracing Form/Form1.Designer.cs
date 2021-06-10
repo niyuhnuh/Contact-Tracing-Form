@@ -56,6 +56,9 @@ namespace Contact_Tracing_Form
             this.lbl_Req5 = new System.Windows.Forms.Label();
             this.lbl_Req6 = new System.Windows.Forms.Label();
             this.lbl_Status = new System.Windows.Forms.Label();
+            this.lbl_Age = new System.Windows.Forms.Label();
+            this.txtbx_Age = new System.Windows.Forms.TextBox();
+            this.lbl_Req4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_Title
@@ -324,12 +327,45 @@ namespace Contact_Tracing_Form
             this.lbl_Status.Text = "* Required fields. \r\nPlease do not leave empty.";
             this.lbl_Status.Visible = false;
             // 
+            // lbl_Age
+            // 
+            this.lbl_Age.AutoSize = true;
+            this.lbl_Age.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Age.Location = new System.Drawing.Point(308, 205);
+            this.lbl_Age.Name = "lbl_Age";
+            this.lbl_Age.Size = new System.Drawing.Size(53, 22);
+            this.lbl_Age.TabIndex = 28;
+            this.lbl_Age.Text = "Age:";
+            // 
+            // txtbx_Age
+            // 
+            this.txtbx_Age.Location = new System.Drawing.Point(363, 204);
+            this.txtbx_Age.Name = "txtbx_Age";
+            this.txtbx_Age.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.txtbx_Age.Size = new System.Drawing.Size(60, 23);
+            this.txtbx_Age.TabIndex = 29;
+            // 
+            // lbl_Req4
+            // 
+            this.lbl_Req4.AutoSize = true;
+            this.lbl_Req4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Req4.ForeColor = System.Drawing.Color.Red;
+            this.lbl_Req4.Location = new System.Drawing.Point(429, 204);
+            this.lbl_Req4.Name = "lbl_Req4";
+            this.lbl_Req4.Size = new System.Drawing.Size(17, 22);
+            this.lbl_Req4.TabIndex = 30;
+            this.lbl_Req4.Text = "*";
+            this.lbl_Req4.Visible = false;
+            // 
             // form_Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(465, 347);
+            this.Controls.Add(this.lbl_Req4);
+            this.Controls.Add(this.txtbx_Age);
+            this.Controls.Add(this.lbl_Age);
             this.Controls.Add(this.lbl_Status);
             this.Controls.Add(this.lbl_Req6);
             this.Controls.Add(this.lbl_Req5);
@@ -394,6 +430,9 @@ namespace Contact_Tracing_Form
         private System.Windows.Forms.Label lbl_Req5;
         private System.Windows.Forms.Label lbl_Req6;
         private System.Windows.Forms.Label lbl_Status;
+        private System.Windows.Forms.Label lbl_Age;
+        private System.Windows.Forms.TextBox txtbx_Age;
+        private System.Windows.Forms.Label lbl_Req4;
     }
 }
 
