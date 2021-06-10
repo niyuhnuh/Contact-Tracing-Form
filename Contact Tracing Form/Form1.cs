@@ -24,7 +24,7 @@ namespace Contact_Tracing_Form
             this.cmbAMPM();
         }
 
-        bool f_Name, l_Name, address, age, day, month, year, contact_Info1, contact_Info2, time, spec_Time = false;
+        bool f_Name, l_Name, address, age, contact_Info1, contact_Info2, time, spec_Time = false;
 
         private void btn_Clear_Click(object sender, EventArgs e)
         {
@@ -127,14 +127,7 @@ namespace Contact_Tracing_Form
         private void cmb_Day_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbDays();
-            if (cmb_Day.SelectedIndex > -1)
-            {
-                day = true;
-            }
-            else
-            {
-                day = false;
-            }
+          
             
         }
 
@@ -151,14 +144,7 @@ namespace Contact_Tracing_Form
         private void cmb_Month_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbMonths();
-            if (cmb_Month.SelectedIndex > -1)
-            {
-                month = true;
-            }
-            else
-            {
-                month = false;
-            }
+     
             
         }
 
@@ -181,14 +167,7 @@ namespace Contact_Tracing_Form
         private void cmb_Year_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbYears();
-            if (cmb_Year.SelectedIndex > -1)
-            {
-                year = true;
-            }
-            else
-            {
-                year = false;
-            }
+         
         }
 
         private void cmbYears()
