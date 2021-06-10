@@ -36,11 +36,11 @@ namespace Contact_Tracing_Form
             txtbx_Contact2.Text = "";
             txtbx_Time.Text = "";
             txtbx_Age.Text = "";
-         
+            cmb_Day.SelectedIndex = -1;
             cmb_Day.ResetText();
-          
+            cmb_Month.SelectedIndex = -1;
             cmb_Month.ResetText();
-           
+            cmb_Year.SelectedIndex = -1;
             cmb_Year.ResetText();
            
             cmb_AMPM.ResetText();
