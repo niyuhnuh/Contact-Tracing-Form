@@ -24,7 +24,7 @@ namespace Contact_Tracing_Form
             this.cmbAMPM();
         }
 
-        bool f_Name, l_Name, address, day, month, year, contact_Info1, contact_Info2, time, spec_Time = false;
+        bool f_Name, l_Name, address, age, day, month, year, contact_Info1, contact_Info2, time, spec_Time = false;
 
         private void btn_Clear_Click(object sender, EventArgs e)
         {
@@ -136,6 +136,16 @@ namespace Contact_Tracing_Form
             
         }
 
+        private void txtbx_Age_TextChanged(object sender, EventArgs e)
+        {
+            if (txtbx_Age.Text == "")
+                age = false;
+            else
+            {
+                age = true;
+            }
+        }
+
         private void cmb_Month_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbMonths();
@@ -223,6 +233,13 @@ namespace Contact_Tracing_Form
                 lbl_Status.Visible = true;
             }
 
+            if(age == false)
+            {
+                lbl_Req4.Visible = true;
+                lbl_Status.Visible = true;
+
+            }
+
             if (time == false)
             {
                 lbl_Req6.Visible = true;
@@ -251,7 +268,7 @@ namespace Contact_Tracing_Form
                 savedInfo = File.AppendText("saved.txt");
                 savedInfo.WriteLine(txtbx_FName.Text +", " + txtbx_LName.Text + ", " + txtbx_Address.Text + ", "
                     + "" + cmb_Month.SelectedItem + " " + cmb_Day.SelectedItem + " " + cmb_Year.SelectedItem + ", " +
-                    txtbx_Gender.Text + ", " + txtbx_Contact1.Text + " | " + txtbx_Contact2.Text + ", " + txtbx_Time.Text + " " +  cmb_AMPM.SelectedItem + ", ");
+                    txtbx_Gender.Text + ", " + txtbx_Age.Text + "," + txtbx_Contact1.Text + " | " + txtbx_Contact2.Text + ", " + txtbx_Time.Text + " " +  cmb_AMPM.SelectedItem + ", ");
                
                 savedInfo.Close();
 

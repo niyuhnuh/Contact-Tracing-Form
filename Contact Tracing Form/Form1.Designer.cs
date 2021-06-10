@@ -344,6 +344,7 @@ namespace Contact_Tracing_Form
             this.txtbx_Age.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.txtbx_Age.Size = new System.Drawing.Size(60, 23);
             this.txtbx_Age.TabIndex = 29;
+            this.txtbx_Age.TextChanged += new System.EventHandler(this.txtbx_Age_TextChanged);
             // 
             // lbl_Req4
             // 
