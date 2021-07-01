@@ -38,6 +38,8 @@ namespace Contact_Tracing_Form
             this.col_Age = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_ContactInf = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_Return = new System.Windows.Forms.Button();
+            this.btn_Exit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dg_SavedInfo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -122,11 +124,32 @@ namespace Contact_Tracing_Form
             this.col_Time.ReadOnly = true;
             this.col_Time.Width = 93;
             // 
+            // btn_Return
+            // 
+            this.btn_Return.Location = new System.Drawing.Point(12, 341);
+            this.btn_Return.Name = "btn_Return";
+            this.btn_Return.Size = new System.Drawing.Size(75, 23);
+            this.btn_Return.TabIndex = 1;
+            this.btn_Return.Text = "Return";
+            this.btn_Return.UseVisualStyleBackColor = true;
+            this.btn_Return.Click += new System.EventHandler(this.btn_Return_Click);
+            // 
+            // btn_Exit
+            // 
+            this.btn_Exit.Location = new System.Drawing.Point(93, 341);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(75, 23);
+            this.btn_Exit.TabIndex = 2;
+            this.btn_Exit.Text = "Exit";
+            this.btn_Exit.UseVisualStyleBackColor = true;
+            // 
             // form_Read
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(718, 343);
+            this.ClientSize = new System.Drawing.Size(718, 376);
+            this.Controls.Add(this.btn_Exit);
+            this.Controls.Add(this.btn_Return);
             this.Controls.Add(this.dg_SavedInfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "form_Read";
@@ -148,5 +171,7 @@ namespace Contact_Tracing_Form
         private System.Windows.Forms.DataGridViewTextBoxColumn col_Age;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_ContactInf;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_Time;
+        private System.Windows.Forms.Button btn_Return;
+        private System.Windows.Forms.Button btn_Exit;
     }
 }

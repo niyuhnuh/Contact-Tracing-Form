@@ -36,5 +36,12 @@ namespace Contact_Tracing_Form
             }
 
         }
+        private void btn_Return_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            form_Registration f1 = new form_Registration();
+            f1.ShowDialog();
+        }
     }
 }
