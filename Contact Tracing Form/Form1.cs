@@ -44,7 +44,7 @@ namespace Contact_Tracing_Form
             cmb_Month.ResetText();
             cmb_Year.SelectedIndex = -1;
             cmb_Year.ResetText();
-           
+            cmb_AMPM.SelectedIndex = -1;
             cmb_AMPM.ResetText();
             lbl_Req1.Visible = false;
             lbl_Req2.Visible = false;
