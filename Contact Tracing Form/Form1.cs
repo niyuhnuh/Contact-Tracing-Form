@@ -141,6 +141,15 @@ namespace Contact_Tracing_Form
             }
         }
 
+        private void txtbx_FName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsControl(e.KeyChar) || char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back)
+            {
+                return;
+            }
+            e.Handled = true;
+        }
+
         private void cmb_Month_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbMonths();
