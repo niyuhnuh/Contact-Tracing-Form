@@ -348,6 +348,7 @@ namespace Contact_Tracing_Form
             this.txtbx_Age.Size = new System.Drawing.Size(60, 23);
             this.txtbx_Age.TabIndex = 29;
             this.txtbx_Age.TextChanged += new System.EventHandler(this.txtbx_Age_TextChanged);
+            this.txtbx_Age.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbx_Age_KeyPress);
             // 
             // lbl_Req4
             // 
