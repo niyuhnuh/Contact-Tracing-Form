@@ -347,6 +347,7 @@ namespace Contact_Tracing_Form
             // txtbx_Age
             // 
             this.txtbx_Age.Location = new System.Drawing.Point(363, 204);
+            this.txtbx_Age.MaxLength = 2;
             this.txtbx_Age.Name = "txtbx_Age";
             this.txtbx_Age.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.txtbx_Age.Size = new System.Drawing.Size(60, 23);

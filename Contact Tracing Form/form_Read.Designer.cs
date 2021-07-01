@@ -47,7 +47,6 @@ namespace Contact_Tracing_Form
             this.dg_SavedInfo.AllowUserToDeleteRows = false;
             this.dg_SavedInfo.AllowUserToResizeColumns = false;
             this.dg_SavedInfo.AllowUserToResizeRows = false;
-            this.dg_SavedInfo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.dg_SavedInfo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dg_SavedInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_SavedInfo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -110,6 +109,7 @@ namespace Contact_Tracing_Form
             // 
             // col_ContactInf
             // 
+            this.col_ContactInf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.col_ContactInf.HeaderText = "Contact Information";
             this.col_ContactInf.Name = "col_ContactInf";
             this.col_ContactInf.ReadOnly = true;
@@ -128,7 +128,7 @@ namespace Contact_Tracing_Form
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(718, 343);
             this.Controls.Add(this.dg_SavedInfo);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "form_Read";
             this.Text = "form_Read";
             this.Load += new System.EventHandler(this.form_Read_Load);
