@@ -179,7 +179,16 @@ namespace Contact_Tracing_Form
 
         private void txtbx_Time_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (char.IsControl(e.KeyChar) || char.IsDigit(e.KeyChar) || (e.KeyChar >= 1 && e.KeyChar <=12))
+            if (char.IsControl(e.KeyChar) || char.IsDigit(e.KeyChar) || (e.KeyChar >= 1 && e.KeyChar <=9))
+            {
+                return;
+            }
+            e.Handled = true;
+        }
+
+        private void lbl_Timemin_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsControl(e.KeyChar) || char.IsDigit(e.KeyChar) || (e.KeyChar >= 0 && e.KeyChar <= 9))
             {
                 return;
             }

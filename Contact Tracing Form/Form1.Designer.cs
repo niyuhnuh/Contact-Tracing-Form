@@ -371,6 +371,7 @@ namespace Contact_Tracing_Form
             this.lbl_Timemin.Name = "lbl_Timemin";
             this.lbl_Timemin.Size = new System.Drawing.Size(32, 23);
             this.lbl_Timemin.TabIndex = 31;
+            this.lbl_Timemin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lbl_Timemin_KeyPress);
             // 
             // lbl_Colon
             // 
