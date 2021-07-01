@@ -425,6 +425,7 @@ namespace Contact_Tracing_Form
             this.Controls.Add(this.lbl_Title);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "form_Registration";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registration Form";
             this.ResumeLayout(false);
             this.PerformLayout();
