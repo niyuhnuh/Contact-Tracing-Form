@@ -142,6 +142,7 @@ namespace Contact_Tracing_Form
             this.btn_Exit.TabIndex = 2;
             this.btn_Exit.Text = "Exit";
             this.btn_Exit.UseVisualStyleBackColor = true;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // form_Read
             // 

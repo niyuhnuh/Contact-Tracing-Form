@@ -43,5 +43,10 @@ namespace Contact_Tracing_Form
             form_Registration f1 = new form_Registration();
             f1.ShowDialog();
         }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
