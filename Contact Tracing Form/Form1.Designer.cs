@@ -234,6 +234,7 @@ namespace Contact_Tracing_Form
             this.txtbx_FName.Size = new System.Drawing.Size(232, 23);
             this.txtbx_FName.TabIndex = 18;
             this.txtbx_FName.TextChanged += new System.EventHandler(this.txtbx_FName_TextChanged);
+            this.txtbx_FName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbx_FName_KeyPress);
             // 
             // btn_Save
             // 
