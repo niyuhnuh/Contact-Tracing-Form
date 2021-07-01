@@ -63,7 +63,6 @@ namespace Contact_Tracing_Form
                 dates[i] = i + 1;
             }
             cmb_Day.Items.AddRange(dates);
-
         }
 
         private void txtbx_FName_TextChanged(object sender, EventArgs e)
@@ -128,9 +127,7 @@ namespace Contact_Tracing_Form
 
         private void cmb_Day_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cmbDays();
-          
-            
+            cmbDays();                  
         }
 
         private void txtbx_Age_TextChanged(object sender, EventArgs e)
@@ -199,9 +196,7 @@ namespace Contact_Tracing_Form
 
         private void cmb_Month_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cmbMonths();
-     
-            
+            cmbMonths();         
         }
 
         private void cmbMonths()
@@ -222,8 +217,7 @@ namespace Contact_Tracing_Form
 
         private void cmb_Year_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cmbYears();
-         
+            cmbYears();        
         }
 
         private void cmbYears()
@@ -247,8 +241,6 @@ namespace Contact_Tracing_Form
             cmb_AMPM.Items.Add("AM");
             cmb_AMPM.Items.Add("PM");
         }
-
-     
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
@@ -294,12 +286,8 @@ namespace Contact_Tracing_Form
                 lbl_Req5.Visible = true;
                 lbl_Status.Visible = true;
             }
-
-        
-
             else
             {
-
                 //Data from user
                 StreamWriter savedInfo;
                 savedInfo = File.AppendText("saved.txt");
@@ -316,6 +304,7 @@ namespace Contact_Tracing_Form
                 txtbx_Contact1.Text = "";
                 txtbx_Contact2.Text = "";
                 txtbx_Time.Text = "";
+                txtbx_Timemin.Text = "";
                 txtbx_Age.Text = "";
                 cmb_Day.Items.Clear();
                 cmb_Day.ResetText();
