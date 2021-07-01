@@ -268,7 +268,6 @@ namespace Contact_Tracing_Form
             {
                 lbl_Req4.Visible = true;
                 lbl_Status.Visible = true;
-
             }
 
             if (time == false)
@@ -290,44 +289,85 @@ namespace Contact_Tracing_Form
             }
             else
             {
-                //Data from user
-                StreamWriter savedInfo;
-                savedInfo = File.AppendText("saved.txt");
-                savedInfo.WriteLine(txtbx_FName.Text +", " + txtbx_LName.Text + ", " + txtbx_Address.Text + ", "
-                    + "" + cmb_Month.SelectedItem + " " + cmb_Day.SelectedItem + " " + cmb_Year.SelectedItem + ", " +
-                    txtbx_Gender.Text + ", " + txtbx_Age.Text + "," + txtbx_Contact1.Text + " | " + txtbx_Contact2.Text + ", " + txtbx_Time.Text + ":" + txtbx_Timemin.Text + " " +  cmb_AMPM.SelectedItem + ", ");
-               
-                savedInfo.Close();
+                if (((cmb_Month.SelectedItem.ToString() == "January" || cmb_Month.SelectedItem.ToString() == "March" || cmb_Month.SelectedItem.ToString() == "May" || cmb_Month.SelectedItem.ToString() == "July" || cmb_Month.SelectedItem.ToString() == "August" || cmb_Month.SelectedItem.ToString() == "October" || cmb_Month.SelectedItem.ToString() == "December") && cmb_Day.SelectedItem.ToString() == "31"))
+                {
+                    StreamWriter savedInfo;
+                    savedInfo = File.AppendText("saved.txt");
+                    savedInfo.WriteLine(txtbx_FName.Text + ", " + txtbx_LName.Text + ", " + txtbx_Address.Text + ", "
+                        + "Invalid Birthday " + ", " +
+                        txtbx_Gender.Text + ", " + txtbx_Age.Text + "," + txtbx_Contact1.Text + " | " + txtbx_Contact2.Text + ", " + txtbx_Time.Text + ":" + txtbx_Timemin.Text + " " + cmb_AMPM.SelectedItem + ", ");
 
-                txtbx_FName.Text = "";
-                txtbx_LName.Text = "";
-                txtbx_Address.Text = "";
-                txtbx_Gender.Text = "";
-                txtbx_Contact1.Text = "";
-                txtbx_Contact2.Text = "";
-                txtbx_Time.Text = "";
-                txtbx_Timemin.Text = "";
-                txtbx_Age.Text = "";
-                cmb_Day.Items.Clear();
-                cmb_Day.ResetText();
-                cmb_Month.Items.Clear();
-                cmb_Month.ResetText();
-                cmb_Year.Items.Clear();
-                cmb_Year.ResetText();
-                cmb_AMPM.Items.Clear();
-                cmb_AMPM.ResetText();
-                lbl_Req1.Visible = false;
-                lbl_Req2.Visible = false;
-                lbl_Req3.Visible = false;
-                lbl_Req4.Visible = false;
-                lbl_Req5.Visible = false;
-                lbl_Req6.Visible = false;
-                lbl_Status.Visible = false;
+                    savedInfo.Close();
+                    txtbx_FName.Text = "";
+                    txtbx_LName.Text = "";
+                    txtbx_Address.Text = "";
+                    txtbx_Gender.Text = "";
+                    txtbx_Contact1.Text = "";
+                    txtbx_Contact2.Text = "";
+                    txtbx_Time.Text = "";
+                    txtbx_Timemin.Text = "";
+                    txtbx_Age.Text = "";
+                    cmb_Day.Items.Clear();
+                    cmb_Day.ResetText();
+                    cmb_Month.Items.Clear();
+                    cmb_Month.ResetText();
+                    cmb_Year.Items.Clear();
+                    cmb_Year.ResetText();
+                    cmb_AMPM.Items.Clear();
+                    cmb_AMPM.ResetText();
+                    lbl_Req1.Visible = false;
+                    lbl_Req2.Visible = false;
+                    lbl_Req3.Visible = false;
+                    lbl_Req4.Visible = false;
+                    lbl_Req5.Visible = false;
+                    lbl_Req6.Visible = false;
+                    lbl_Status.Visible = false;
 
-                this.Hide();
+                    this.Hide();
 
-                form_Read f2 = new form_Read();
-                f2.ShowDialog();
+                    form_Read f2 = new form_Read();
+                    f2.ShowDialog();
+                }
+                else
+                {
+                    StreamWriter savedInfo;
+                    savedInfo = File.AppendText("saved.txt");
+                    savedInfo.WriteLine(txtbx_FName.Text + ", " + txtbx_LName.Text + ", " + txtbx_Address.Text + ", "
+                        + "" + cmb_Month.SelectedItem + " " + cmb_Day.SelectedItem + " " + cmb_Year.SelectedItem + ", " +
+                        txtbx_Gender.Text + ", " + txtbx_Age.Text + "," + txtbx_Contact1.Text + " | " + txtbx_Contact2.Text + ", " + txtbx_Time.Text + ":" + txtbx_Timemin.Text + " " + cmb_AMPM.SelectedItem + ", ");
+
+                    savedInfo.Close();
+
+                    txtbx_FName.Text = "";
+                    txtbx_LName.Text = "";
+                    txtbx_Address.Text = "";
+                    txtbx_Gender.Text = "";
+                    txtbx_Contact1.Text = "";
+                    txtbx_Contact2.Text = "";
+                    txtbx_Time.Text = "";
+                    txtbx_Timemin.Text = "";
+                    txtbx_Age.Text = "";
+                    cmb_Day.Items.Clear();
+                    cmb_Day.ResetText();
+                    cmb_Month.Items.Clear();
+                    cmb_Month.ResetText();
+                    cmb_Year.Items.Clear();
+                    cmb_Year.ResetText();
+                    cmb_AMPM.Items.Clear();
+                    cmb_AMPM.ResetText();
+                    lbl_Req1.Visible = false;
+                    lbl_Req2.Visible = false;
+                    lbl_Req3.Visible = false;
+                    lbl_Req4.Visible = false;
+                    lbl_Req5.Visible = false;
+                    lbl_Req6.Visible = false;
+                    lbl_Status.Visible = false;
+
+                    this.Hide();
+
+                    form_Read f2 = new form_Read();
+                    f2.ShowDialog();
+                }
             }
         }
     }
