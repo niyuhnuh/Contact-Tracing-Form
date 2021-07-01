@@ -29,6 +29,7 @@ namespace Contact_Tracing_Form
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form_Registration));
             this.lbl_Title = new System.Windows.Forms.Label();
             this.lbl_LName = new System.Windows.Forms.Label();
             this.lbl_Address = new System.Windows.Forms.Label();
@@ -317,7 +318,7 @@ namespace Contact_Tracing_Form
             this.lbl_Status.AutoSize = true;
             this.lbl_Status.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_Status.ForeColor = System.Drawing.Color.Red;
-            this.lbl_Status.Location = new System.Drawing.Point(26, 308);
+            this.lbl_Status.Location = new System.Drawing.Point(26, 300);
             this.lbl_Status.Name = "lbl_Status";
             this.lbl_Status.Size = new System.Drawing.Size(211, 38);
             this.lbl_Status.TabIndex = 27;
@@ -425,6 +426,7 @@ namespace Contact_Tracing_Form
             this.Controls.Add(this.lbl_LName);
             this.Controls.Add(this.lbl_Title);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "form_Registration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registration Form";

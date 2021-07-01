@@ -60,7 +60,7 @@ namespace Contact_Tracing_Form
             this.col_Age,
             this.col_ContactInf,
             this.col_Time});
-            this.dg_SavedInfo.Location = new System.Drawing.Point(12, 22);
+            this.dg_SavedInfo.Location = new System.Drawing.Point(12, 21);
             this.dg_SavedInfo.Name = "dg_SavedInfo";
             this.dg_SavedInfo.ReadOnly = true;
             this.dg_SavedInfo.RowTemplate.Height = 25;

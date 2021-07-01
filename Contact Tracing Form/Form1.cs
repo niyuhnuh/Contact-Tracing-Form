@@ -200,7 +200,7 @@ namespace Contact_Tracing_Form
             System.Object[] hours = new System.Object[13];
             for (int i = 0; i <= 12; i++)
             {
-                hours[i] = i;
+                hours[i] = i + 1;
             }
             cmb_Timehour.Items.AddRange(hours);
         }
