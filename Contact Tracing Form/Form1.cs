@@ -110,18 +110,6 @@ namespace Contact_Tracing_Form
             }
         }
 
-        private void txtbx_Time_TextChanged(object sender, EventArgs e)
-        {
-            if (txtbx_Time.Text == "" && txtbx_Timemin.Text == "")
-            {
-                spec_Time = false;
-            }
-            else
-            {
-                spec_Time = true;
-            }
-        }
-
         private void txtbx_Contact2_TextChanged(object sender, EventArgs e)
         {
             if (txtbx_Contact2.Text == "")
@@ -330,7 +318,7 @@ namespace Contact_Tracing_Form
                     savedInfo = File.AppendText("saved.txt");
                     savedInfo.WriteLine(txtbx_FName.Text + ", " + txtbx_LName.Text + ", " + txtbx_Address.Text + ", "
                         + "Invalid Birthday " + ", " +
-                        txtbx_Gender.Text + ", " + txtbx_Age.Text + "," + txtbx_Contact1.Text + " | " + txtbx_Contact2.Text + ", " + txtbx_Time.Text + ":" + txtbx_Timemin.Text + " " + cmb_AMPM.SelectedItem + ", ");
+                        txtbx_Gender.Text + ", " + txtbx_Age.Text + "," + txtbx_Contact1.Text + " | " + txtbx_Contact2.Text + ", " + cmb_Timehour.SelectedItem + ":" + cmb_Timemin.SelectedItem + " " + cmb_AMPM.SelectedItem + ", ");
 
                     savedInfo.Close();
                     txtbx_FName.Text = "";
@@ -339,8 +327,6 @@ namespace Contact_Tracing_Form
                     txtbx_Gender.Text = "";
                     txtbx_Contact1.Text = "";
                     txtbx_Contact2.Text = "";
-                    txtbx_Time.Text = "";
-                    txtbx_Timemin.Text = "";
                     txtbx_Age.Text = "";
                     cmb_Day.Items.Clear();
                     cmb_Day.ResetText();
@@ -348,6 +334,10 @@ namespace Contact_Tracing_Form
                     cmb_Month.ResetText();
                     cmb_Year.Items.Clear();
                     cmb_Year.ResetText();
+                    cmb_Timehour.Items.Clear();
+                    cmb_Timehour.ResetText();
+                    cmb_Timemin.Items.Clear();
+                    cmb_Timemin.ResetText();
                     cmb_AMPM.Items.Clear();
                     cmb_AMPM.ResetText();
                     lbl_Req1.Visible = false;
@@ -370,7 +360,7 @@ namespace Contact_Tracing_Form
                     savedInfo = File.AppendText("saved.txt");
                     savedInfo.WriteLine(txtbx_FName.Text + ", " + txtbx_LName.Text + ", " + txtbx_Address.Text + ", "
                         + "" + cmb_Month.SelectedItem + " " + cmb_Day.SelectedItem + " " + cmb_Year.SelectedItem + ", " +
-                        txtbx_Gender.Text + ", " + txtbx_Age.Text + "," + txtbx_Contact1.Text + " | " + txtbx_Contact2.Text + ", " + txtbx_Time.Text + ":" + txtbx_Timemin.Text + " " + cmb_AMPM.SelectedItem + ", ");
+                        txtbx_Gender.Text + ", " + txtbx_Age.Text + "," + txtbx_Contact1.Text + " | " + txtbx_Contact2.Text + ", " + cmb_Timehour.SelectedItem + ":" + cmb_Timemin.SelectedItem + " " + cmb_AMPM.SelectedItem + ", ");
 
                     savedInfo.Close();
 
@@ -380,8 +370,6 @@ namespace Contact_Tracing_Form
                     txtbx_Gender.Text = "";
                     txtbx_Contact1.Text = "";
                     txtbx_Contact2.Text = "";
-                    txtbx_Time.Text = "";
-                    txtbx_Timemin.Text = "";
                     txtbx_Age.Text = "";
                     cmb_Day.Items.Clear();
                     cmb_Day.ResetText();
@@ -389,6 +377,10 @@ namespace Contact_Tracing_Form
                     cmb_Month.ResetText();
                     cmb_Year.Items.Clear();
                     cmb_Year.ResetText();
+                    cmb_Timehour.Items.Clear();
+                    cmb_Timehour.ResetText();
+                    cmb_Timemin.Items.Clear();
+                    cmb_Timemin.ResetText();
                     cmb_AMPM.Items.Clear();
                     cmb_AMPM.ResetText();
                     lbl_Req1.Visible = false;
