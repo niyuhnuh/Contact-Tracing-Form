@@ -289,7 +289,7 @@ namespace Contact_Tracing_Form
             }
             else
             {
-                if (((cmb_Month.SelectedItem.ToString() == "January" || cmb_Month.SelectedItem.ToString() == "March" || cmb_Month.SelectedItem.ToString() == "May" || cmb_Month.SelectedItem.ToString() == "July" || cmb_Month.SelectedItem.ToString() == "August" || cmb_Month.SelectedItem.ToString() == "October" || cmb_Month.SelectedItem.ToString() == "December") && cmb_Day.SelectedItem.ToString() == "31"))
+                if (((cmb_Month.SelectedItem.ToString() == "February" || cmb_Month.SelectedItem.ToString() == "April" || cmb_Month.SelectedItem.ToString() == "June" || cmb_Month.SelectedItem.ToString() == "September" || cmb_Month.SelectedItem.ToString() == "November") && cmb_Day.SelectedItem.ToString() == "31"))
                 {
                     StreamWriter savedInfo;
                     savedInfo = File.AppendText("saved.txt");
