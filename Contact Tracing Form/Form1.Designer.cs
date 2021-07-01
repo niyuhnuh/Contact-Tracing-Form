@@ -395,6 +395,7 @@ namespace Contact_Tracing_Form
             this.cmb_Timehour.Name = "cmb_Timehour";
             this.cmb_Timehour.Size = new System.Drawing.Size(32, 23);
             this.cmb_Timehour.TabIndex = 33;
+            this.cmb_Timehour.SelectedIndexChanged += new System.EventHandler(this.cmb_Timehour_SelectedIndexChanged);
             // 
             // cmb_Timemin
             // 
@@ -404,6 +405,7 @@ namespace Contact_Tracing_Form
             this.cmb_Timemin.Name = "cmb_Timemin";
             this.cmb_Timemin.Size = new System.Drawing.Size(32, 23);
             this.cmb_Timemin.TabIndex = 34;
+            this.cmb_Timemin.SelectedIndexChanged += new System.EventHandler(this.cmb_Timemin_SelectedIndexChanged);
             // 
             // form_Registration
             // 

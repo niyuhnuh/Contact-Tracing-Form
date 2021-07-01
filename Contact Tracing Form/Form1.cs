@@ -208,9 +208,24 @@ namespace Contact_Tracing_Form
             System.Object[] hours = new System.Object[13];
             for (int i = 0; i <= 12; i++)
             {
-                hours[i] = i + 1930;
+                hours[i] = i;
             }
             cmb_Timehour.Items.AddRange(hours);
+        }
+
+        private void cmb_Timemin_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cmbTimemin();
+        }
+
+        private void cmbTimemin()
+        {
+            System.Object[] minutes = new System.Object[60];
+            for (int i = 0; i <= 59; i++)
+            {
+                minutes[i] = i;
+            }
+            cmb_Timemin.Items.AddRange(minutes);
         }
 
         private void cmb_Month_SelectedIndexChanged(object sender, EventArgs e)
