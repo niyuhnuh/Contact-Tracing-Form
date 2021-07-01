@@ -206,6 +206,7 @@ namespace Contact_Tracing_Form
             // txtbx_Time
             // 
             this.txtbx_Time.Location = new System.Drawing.Point(191, 262);
+            this.txtbx_Time.MaxLength = 2;
             this.txtbx_Time.Name = "txtbx_Time";
             this.txtbx_Time.Size = new System.Drawing.Size(32, 23);
             this.txtbx_Time.TabIndex = 15;
@@ -368,6 +369,7 @@ namespace Contact_Tracing_Form
             // txtbx_Timemin
             // 
             this.txtbx_Timemin.Location = new System.Drawing.Point(242, 262);
+            this.txtbx_Timemin.MaxLength = 2;
             this.txtbx_Timemin.Name = "txtbx_Timemin";
             this.txtbx_Timemin.Size = new System.Drawing.Size(32, 23);
             this.txtbx_Timemin.TabIndex = 31;
