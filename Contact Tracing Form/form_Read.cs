@@ -11,7 +11,6 @@ namespace Contact_Tracing_Form
 {
     public partial class form_Read : Form
     {
-       
         public form_Read()
         {
             InitializeComponent();
@@ -37,7 +36,5 @@ namespace Contact_Tracing_Form
             }
 
         }
-
-       
     }
 }
