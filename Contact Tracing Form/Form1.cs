@@ -36,8 +36,6 @@ namespace Contact_Tracing_Form
             txtbx_Gender.Text = "";
             txtbx_Contact1.Text = "";
             txtbx_Contact2.Text = "";
-            txtbx_Time.Text = "";
-            txtbx_Timemin.Text = "";
             txtbx_Age.Text = "";
 
             cmb_Day.SelectedIndex = -1;
@@ -48,6 +46,11 @@ namespace Contact_Tracing_Form
             cmb_Year.ResetText();
             cmb_AMPM.SelectedIndex = -1;
             cmb_AMPM.ResetText();
+            cmb_Timehour.SelectedIndex = -1;
+            cmb_Timehour.ResetText();
+            cmb_Timemin.SelectedIndex = -1;
+            cmb_Timemin.ResetText();
+
             lbl_Req1.Visible = false;
             lbl_Req2.Visible = false;
             lbl_Req3.Visible = false;

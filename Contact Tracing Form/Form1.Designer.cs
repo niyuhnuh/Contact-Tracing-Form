@@ -44,7 +44,6 @@ namespace Contact_Tracing_Form
             this.lbl_Gender = new System.Windows.Forms.Label();
             this.txtbx_Gender = new System.Windows.Forms.TextBox();
             this.lbl_Time = new System.Windows.Forms.Label();
-            this.txtbx_Time = new System.Windows.Forms.TextBox();
             this.cmb_AMPM = new System.Windows.Forms.ComboBox();
             this.lbl_FName = new System.Windows.Forms.Label();
             this.txtbx_FName = new System.Windows.Forms.TextBox();
@@ -59,7 +58,6 @@ namespace Contact_Tracing_Form
             this.lbl_Age = new System.Windows.Forms.Label();
             this.txtbx_Age = new System.Windows.Forms.TextBox();
             this.lbl_Req4 = new System.Windows.Forms.Label();
-            this.txtbx_Timemin = new System.Windows.Forms.TextBox();
             this.lbl_Colon = new System.Windows.Forms.Label();
             this.cmb_Timehour = new System.Windows.Forms.ComboBox();
             this.cmb_Timemin = new System.Windows.Forms.ComboBox();
@@ -205,21 +203,11 @@ namespace Contact_Tracing_Form
             this.lbl_Time.TabIndex = 14;
             this.lbl_Time.Text = "Time: ";
             // 
-            // txtbx_Time
-            // 
-            this.txtbx_Time.Location = new System.Drawing.Point(191, 262);
-            this.txtbx_Time.MaxLength = 2;
-            this.txtbx_Time.Name = "txtbx_Time";
-            this.txtbx_Time.Size = new System.Drawing.Size(32, 23);
-            this.txtbx_Time.TabIndex = 15;
-            this.txtbx_Time.TextChanged += new System.EventHandler(this.txtbx_Time_TextChanged);
-            this.txtbx_Time.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbx_Time_KeyPress);
-            // 
             // cmb_AMPM
             // 
             this.cmb_AMPM.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_AMPM.FormattingEnabled = true;
-            this.cmb_AMPM.Location = new System.Drawing.Point(280, 261);
+            this.cmb_AMPM.Location = new System.Drawing.Point(280, 265);
             this.cmb_AMPM.Name = "cmb_AMPM";
             this.cmb_AMPM.Size = new System.Drawing.Size(46, 23);
             this.cmb_AMPM.TabIndex = 16;
@@ -317,7 +305,7 @@ namespace Contact_Tracing_Form
             this.lbl_Req6.AutoSize = true;
             this.lbl_Req6.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_Req6.ForeColor = System.Drawing.Color.Red;
-            this.lbl_Req6.Location = new System.Drawing.Point(332, 260);
+            this.lbl_Req6.Location = new System.Drawing.Point(332, 266);
             this.lbl_Req6.Name = "lbl_Req6";
             this.lbl_Req6.Size = new System.Drawing.Size(17, 22);
             this.lbl_Req6.TabIndex = 26;
@@ -369,15 +357,6 @@ namespace Contact_Tracing_Form
             this.lbl_Req4.Text = "*";
             this.lbl_Req4.Visible = false;
             // 
-            // txtbx_Timemin
-            // 
-            this.txtbx_Timemin.Location = new System.Drawing.Point(242, 262);
-            this.txtbx_Timemin.MaxLength = 2;
-            this.txtbx_Timemin.Name = "txtbx_Timemin";
-            this.txtbx_Timemin.Size = new System.Drawing.Size(32, 23);
-            this.txtbx_Timemin.TabIndex = 31;
-            this.txtbx_Timemin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lbl_Timemin_KeyPress);
-            // 
             // lbl_Colon
             // 
             this.lbl_Colon.AutoSize = true;
@@ -391,7 +370,7 @@ namespace Contact_Tracing_Form
             // 
             this.cmb_Timehour.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Timehour.FormattingEnabled = true;
-            this.cmb_Timehour.Location = new System.Drawing.Point(191, 291);
+            this.cmb_Timehour.Location = new System.Drawing.Point(191, 265);
             this.cmb_Timehour.Name = "cmb_Timehour";
             this.cmb_Timehour.Size = new System.Drawing.Size(32, 23);
             this.cmb_Timehour.TabIndex = 33;
@@ -401,7 +380,7 @@ namespace Contact_Tracing_Form
             // 
             this.cmb_Timemin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Timemin.FormattingEnabled = true;
-            this.cmb_Timemin.Location = new System.Drawing.Point(243, 291);
+            this.cmb_Timemin.Location = new System.Drawing.Point(242, 265);
             this.cmb_Timemin.Name = "cmb_Timemin";
             this.cmb_Timemin.Size = new System.Drawing.Size(32, 23);
             this.cmb_Timemin.TabIndex = 34;
@@ -416,7 +395,6 @@ namespace Contact_Tracing_Form
             this.Controls.Add(this.cmb_Timemin);
             this.Controls.Add(this.cmb_Timehour);
             this.Controls.Add(this.lbl_Colon);
-            this.Controls.Add(this.txtbx_Timemin);
             this.Controls.Add(this.lbl_Req4);
             this.Controls.Add(this.txtbx_Age);
             this.Controls.Add(this.lbl_Age);
@@ -431,7 +409,6 @@ namespace Contact_Tracing_Form
             this.Controls.Add(this.txtbx_FName);
             this.Controls.Add(this.lbl_FName);
             this.Controls.Add(this.cmb_AMPM);
-            this.Controls.Add(this.txtbx_Time);
             this.Controls.Add(this.lbl_Time);
             this.Controls.Add(this.txtbx_Gender);
             this.Controls.Add(this.lbl_Gender);
@@ -473,7 +450,6 @@ namespace Contact_Tracing_Form
         private System.Windows.Forms.Label lbl_Gender;
         private System.Windows.Forms.TextBox txtbx_Gender;
         private System.Windows.Forms.Label lbl_Time;
-        private System.Windows.Forms.TextBox txtbx_Time;
         private System.Windows.Forms.ComboBox cmb_AMPM;
         private System.Windows.Forms.Label lbl_FName;
         private System.Windows.Forms.TextBox txtbx_FName;
@@ -488,7 +464,6 @@ namespace Contact_Tracing_Form
         private System.Windows.Forms.Label lbl_Age;
         private System.Windows.Forms.TextBox txtbx_Age;
         private System.Windows.Forms.Label lbl_Req4;
-        private System.Windows.Forms.TextBox txtbx_Timemin;
         private System.Windows.Forms.Label lbl_Colon;
         private System.Windows.Forms.ComboBox cmb_Timehour;
         private System.Windows.Forms.ComboBox cmb_Timemin;
