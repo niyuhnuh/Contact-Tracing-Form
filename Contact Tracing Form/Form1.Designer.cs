@@ -189,6 +189,7 @@ namespace Contact_Tracing_Form
             this.txtbx_Gender.Name = "txtbx_Gender";
             this.txtbx_Gender.Size = new System.Drawing.Size(111, 23);
             this.txtbx_Gender.TabIndex = 13;
+            this.txtbx_Gender.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbx_Gender_KeyPress);
             // 
             // lbl_Time
             // 
