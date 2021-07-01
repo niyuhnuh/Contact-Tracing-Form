@@ -61,6 +61,8 @@ namespace Contact_Tracing_Form
             this.lbl_Req4 = new System.Windows.Forms.Label();
             this.txtbx_Timemin = new System.Windows.Forms.TextBox();
             this.lbl_Colon = new System.Windows.Forms.Label();
+            this.cmb_Timehour = new System.Windows.Forms.ComboBox();
+            this.cmb_Timemin = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lbl_Title
@@ -327,7 +329,7 @@ namespace Contact_Tracing_Form
             this.lbl_Status.AutoSize = true;
             this.lbl_Status.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_Status.ForeColor = System.Drawing.Color.Red;
-            this.lbl_Status.Location = new System.Drawing.Point(12, 293);
+            this.lbl_Status.Location = new System.Drawing.Point(26, 308);
             this.lbl_Status.Name = "lbl_Status";
             this.lbl_Status.Size = new System.Drawing.Size(211, 38);
             this.lbl_Status.TabIndex = 27;
@@ -385,12 +387,32 @@ namespace Contact_Tracing_Form
             this.lbl_Colon.TabIndex = 32;
             this.lbl_Colon.Text = ":";
             // 
+            // cmb_Timehour
+            // 
+            this.cmb_Timehour.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_Timehour.FormattingEnabled = true;
+            this.cmb_Timehour.Location = new System.Drawing.Point(191, 291);
+            this.cmb_Timehour.Name = "cmb_Timehour";
+            this.cmb_Timehour.Size = new System.Drawing.Size(32, 23);
+            this.cmb_Timehour.TabIndex = 33;
+            // 
+            // cmb_Timemin
+            // 
+            this.cmb_Timemin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_Timemin.FormattingEnabled = true;
+            this.cmb_Timemin.Location = new System.Drawing.Point(243, 291);
+            this.cmb_Timemin.Name = "cmb_Timemin";
+            this.cmb_Timemin.Size = new System.Drawing.Size(32, 23);
+            this.cmb_Timemin.TabIndex = 34;
+            // 
             // form_Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(465, 347);
+            this.Controls.Add(this.cmb_Timemin);
+            this.Controls.Add(this.cmb_Timehour);
             this.Controls.Add(this.lbl_Colon);
             this.Controls.Add(this.txtbx_Timemin);
             this.Controls.Add(this.lbl_Req4);
@@ -466,6 +488,8 @@ namespace Contact_Tracing_Form
         private System.Windows.Forms.Label lbl_Req4;
         private System.Windows.Forms.TextBox txtbx_Timemin;
         private System.Windows.Forms.Label lbl_Colon;
+        private System.Windows.Forms.ComboBox cmb_Timehour;
+        private System.Windows.Forms.ComboBox cmb_Timemin;
     }
 }
 

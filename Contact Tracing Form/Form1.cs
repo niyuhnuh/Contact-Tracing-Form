@@ -327,20 +327,6 @@ namespace Contact_Tracing_Form
 
                     form_Read f2 = new form_Read();
                     f2.ShowDialog();
-
-                    int hour, min;
-                    hour = int.Parse(txtbx_Time.Text);
-                    min = int.Parse(txtbx_Timemin.Text);
-
-                    if (hour >= 13 || min >= 60)
-                    {
-                        savedInfo = File.AppendText("saved.txt");
-                        savedInfo.WriteLine(txtbx_FName.Text + ", " + txtbx_LName.Text + ", " + txtbx_Address.Text + ", "
-                            + "Invalid Birthday " + ", " +
-                            txtbx_Gender.Text + ", " + txtbx_Age.Text + "," + txtbx_Contact1.Text + " | " + txtbx_Contact2.Text + ", " + "Invalid Time" + ", ");
-
-                        savedInfo.Close();
-                    }
                 }
                 else
                 {
@@ -382,20 +368,6 @@ namespace Contact_Tracing_Form
 
                     form_Read f2 = new form_Read();
                     f2.ShowDialog();
-
-                    int hour, min;
-                    hour = int.Parse(txtbx_Time.Text);
-                    min = int.Parse(txtbx_Timemin.Text);
-
-                    if (hour >= 13 || min >= 60)
-                    {
-                        savedInfo = File.AppendText("saved.txt");
-                        savedInfo.WriteLine(txtbx_FName.Text + ", " + txtbx_LName.Text + ", " + txtbx_Address.Text + ", "
-                            + "Invalid Birthday " + ", " +
-                            txtbx_Gender.Text + ", " + txtbx_Age.Text + "," + txtbx_Contact1.Text + " | " + txtbx_Contact2.Text + ", " + "Invalid Time" + ", ");
-
-                        savedInfo.Close();
-                    }
                 }
             }
         }
