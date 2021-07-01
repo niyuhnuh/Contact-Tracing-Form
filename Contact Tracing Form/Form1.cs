@@ -108,10 +108,12 @@ namespace Contact_Tracing_Form
         private void txtbx_Time_TextChanged(object sender, EventArgs e)
         {
             if (txtbx_Time.Text == "" && txtbx_Timemin.Text == "")
-                spec_Time = true;
-            else
             {
                 spec_Time = true;
+            }
+            else
+            {
+                spec_Time = false;
             }
         }
 
