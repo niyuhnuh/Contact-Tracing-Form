@@ -26,7 +26,7 @@ namespace Contact_Tracing_Form
             this.cmbTimemin();
         }
 
-        bool f_Name, l_Name, address, age, contact_Info1, contact_Info2, time, spec_Time = false;
+        bool f_Name, l_Name, address, age, contact_Info1, contact_Info2, time_Hr, time_Min, spec_Time = false;
 
         private void btn_Clear_Click(object sender, EventArgs e)
         {
@@ -192,6 +192,7 @@ namespace Contact_Tracing_Form
         private void cmb_Timehour_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbTimehour();
+            time_Hr = true;
         }
 
         private void cmbTimehour()
@@ -207,6 +208,7 @@ namespace Contact_Tracing_Form
         private void cmb_Timemin_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbTimemin();
+            time_Min = true;
         }
 
         private void cmbTimemin()
@@ -258,7 +260,7 @@ namespace Contact_Tracing_Form
         private void cmb_AMPM_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbAMPM();
-            time = true;
+            spec_Time = true;
         }
         
         private void cmbAMPM()
@@ -293,7 +295,13 @@ namespace Contact_Tracing_Form
                 lbl_Status.Visible = true;
             }
 
-            if (time == false)
+            if (time_Hr == false)
+            {
+                lbl_Req6.Visible = true;
+                lbl_Status.Visible = true;
+            }
+
+            if (time_Min == false)
             {
                 lbl_Req6.Visible = true;
                 lbl_Status.Visible = true;
