@@ -109,11 +109,11 @@ namespace Contact_Tracing_Form
         {
             if (txtbx_Time.Text == "" && txtbx_Timemin.Text == "")
             {
-                spec_Time = true;
+                spec_Time = false;
             }
             else
             {
-                spec_Time = false;
+                spec_Time = true;
             }
         }
 
