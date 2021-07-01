@@ -210,6 +210,7 @@ namespace Contact_Tracing_Form
             this.txtbx_Time.Size = new System.Drawing.Size(32, 23);
             this.txtbx_Time.TabIndex = 15;
             this.txtbx_Time.TextChanged += new System.EventHandler(this.txtbx_Time_TextChanged);
+            this.txtbx_Time.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbx_Time_KeyPress);
             // 
             // cmb_AMPM
             // 

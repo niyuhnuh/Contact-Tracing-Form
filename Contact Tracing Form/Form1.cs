@@ -177,6 +177,15 @@ namespace Contact_Tracing_Form
             e.Handled = true;
         }
 
+        private void txtbx_Time_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsControl(e.KeyChar) || char.IsDigit(e.KeyChar) || (e.KeyChar >= 1 && e.KeyChar <=12))
+            {
+                return;
+            }
+            e.Handled = true;
+        }
+
         private void cmb_Month_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbMonths();
