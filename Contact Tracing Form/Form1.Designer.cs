@@ -59,7 +59,7 @@ namespace Contact_Tracing_Form
             this.lbl_Age = new System.Windows.Forms.Label();
             this.txtbx_Age = new System.Windows.Forms.TextBox();
             this.lbl_Req4 = new System.Windows.Forms.Label();
-            this.lbl_Timemin = new System.Windows.Forms.TextBox();
+            this.txtbx_Timemin = new System.Windows.Forms.TextBox();
             this.lbl_Colon = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -365,13 +365,13 @@ namespace Contact_Tracing_Form
             this.lbl_Req4.Text = "*";
             this.lbl_Req4.Visible = false;
             // 
-            // lbl_Timemin
+            // txtbx_Timemin
             // 
-            this.lbl_Timemin.Location = new System.Drawing.Point(242, 262);
-            this.lbl_Timemin.Name = "lbl_Timemin";
-            this.lbl_Timemin.Size = new System.Drawing.Size(32, 23);
-            this.lbl_Timemin.TabIndex = 31;
-            this.lbl_Timemin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lbl_Timemin_KeyPress);
+            this.txtbx_Timemin.Location = new System.Drawing.Point(242, 262);
+            this.txtbx_Timemin.Name = "txtbx_Timemin";
+            this.txtbx_Timemin.Size = new System.Drawing.Size(32, 23);
+            this.txtbx_Timemin.TabIndex = 31;
+            this.txtbx_Timemin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lbl_Timemin_KeyPress);
             // 
             // lbl_Colon
             // 
@@ -389,7 +389,7 @@ namespace Contact_Tracing_Form
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(465, 347);
             this.Controls.Add(this.lbl_Colon);
-            this.Controls.Add(this.lbl_Timemin);
+            this.Controls.Add(this.txtbx_Timemin);
             this.Controls.Add(this.lbl_Req4);
             this.Controls.Add(this.txtbx_Age);
             this.Controls.Add(this.lbl_Age);
@@ -460,7 +460,7 @@ namespace Contact_Tracing_Form
         private System.Windows.Forms.Label lbl_Age;
         private System.Windows.Forms.TextBox txtbx_Age;
         private System.Windows.Forms.Label lbl_Req4;
-        private System.Windows.Forms.TextBox lbl_Timemin;
+        private System.Windows.Forms.TextBox txtbx_Timemin;
         private System.Windows.Forms.Label lbl_Colon;
     }
 }

@@ -35,7 +35,9 @@ namespace Contact_Tracing_Form
             txtbx_Contact1.Text = "";
             txtbx_Contact2.Text = "";
             txtbx_Time.Text = "";
+            txtbx_Timemin.Text = "";
             txtbx_Age.Text = "";
+
             cmb_Day.SelectedIndex = -1;
             cmb_Day.ResetText();
             cmb_Month.SelectedIndex = -1;
