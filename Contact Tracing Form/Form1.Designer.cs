@@ -137,6 +137,7 @@ namespace Contact_Tracing_Form
             this.txtbx_LName.Size = new System.Drawing.Size(232, 23);
             this.txtbx_LName.TabIndex = 7;
             this.txtbx_LName.TextChanged += new System.EventHandler(this.txtbx_LName_TextChanged);
+            this.txtbx_LName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbx_LName_KeyPress);
             // 
             // txtbx_Address
             // 
