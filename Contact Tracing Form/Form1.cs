@@ -22,6 +22,8 @@ namespace Contact_Tracing_Form
             this.cmbMonths();
             this.cmbYears();
             this.cmbAMPM();
+            this.cmbTimehour();
+            this.cmbTimemin();
         }
 
         bool f_Name, l_Name, address, age, contact_Info1, contact_Info2, time, spec_Time = false;
@@ -194,6 +196,21 @@ namespace Contact_Tracing_Form
                 return;
             }
             e.Handled = true;
+        }
+
+        private void cmb_Timehour_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cmbTimehour();
+        }
+
+        private void cmbTimehour()
+        {
+            System.Object[] hours = new System.Object[13];
+            for (int i = 0; i <= 12; i++)
+            {
+                hours[i] = i + 1930;
+            }
+            cmb_Timehour.Items.AddRange(hours);
         }
 
         private void cmb_Month_SelectedIndexChanged(object sender, EventArgs e)
