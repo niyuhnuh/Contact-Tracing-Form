@@ -208,7 +208,7 @@ namespace Contact_Tracing_Form
             // 
             this.cmb_AMPM.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_AMPM.FormattingEnabled = true;
-            this.cmb_AMPM.Location = new System.Drawing.Point(280, 265);
+            this.cmb_AMPM.Location = new System.Drawing.Point(312, 265);
             this.cmb_AMPM.Name = "cmb_AMPM";
             this.cmb_AMPM.Size = new System.Drawing.Size(46, 23);
             this.cmb_AMPM.TabIndex = 16;
@@ -306,7 +306,7 @@ namespace Contact_Tracing_Form
             this.lbl_Req6.AutoSize = true;
             this.lbl_Req6.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_Req6.ForeColor = System.Drawing.Color.Red;
-            this.lbl_Req6.Location = new System.Drawing.Point(332, 266);
+            this.lbl_Req6.Location = new System.Drawing.Point(364, 266);
             this.lbl_Req6.Name = "lbl_Req6";
             this.lbl_Req6.Size = new System.Drawing.Size(17, 22);
             this.lbl_Req6.TabIndex = 26;
@@ -361,7 +361,7 @@ namespace Contact_Tracing_Form
             // lbl_Colon
             // 
             this.lbl_Colon.AutoSize = true;
-            this.lbl_Colon.Location = new System.Drawing.Point(227, 265);
+            this.lbl_Colon.Location = new System.Drawing.Point(242, 268);
             this.lbl_Colon.Name = "lbl_Colon";
             this.lbl_Colon.Size = new System.Drawing.Size(10, 15);
             this.lbl_Colon.TabIndex = 32;
@@ -373,7 +373,7 @@ namespace Contact_Tracing_Form
             this.cmb_Timehour.FormattingEnabled = true;
             this.cmb_Timehour.Location = new System.Drawing.Point(191, 265);
             this.cmb_Timehour.Name = "cmb_Timehour";
-            this.cmb_Timehour.Size = new System.Drawing.Size(32, 23);
+            this.cmb_Timehour.Size = new System.Drawing.Size(46, 23);
             this.cmb_Timehour.TabIndex = 33;
             this.cmb_Timehour.SelectedIndexChanged += new System.EventHandler(this.cmb_Timehour_SelectedIndexChanged);
             // 
@@ -381,9 +381,9 @@ namespace Contact_Tracing_Form
             // 
             this.cmb_Timemin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Timemin.FormattingEnabled = true;
-            this.cmb_Timemin.Location = new System.Drawing.Point(242, 265);
+            this.cmb_Timemin.Location = new System.Drawing.Point(258, 265);
             this.cmb_Timemin.Name = "cmb_Timemin";
-            this.cmb_Timemin.Size = new System.Drawing.Size(32, 23);
+            this.cmb_Timemin.Size = new System.Drawing.Size(49, 23);
             this.cmb_Timemin.TabIndex = 34;
             this.cmb_Timemin.SelectedIndexChanged += new System.EventHandler(this.cmb_Timemin_SelectedIndexChanged);
             // 

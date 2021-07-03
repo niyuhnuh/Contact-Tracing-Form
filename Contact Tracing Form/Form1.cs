@@ -197,8 +197,8 @@ namespace Contact_Tracing_Form
 
         private void cmbTimehour()
         {
-            System.Object[] hours = new System.Object[13];
-            for (int i = 0; i <= 12; i++)
+            System.Object[] hours = new System.Object[12];
+            for (int i = 0; i <= 11; i++)
             {
                 hours[i] = i + 1;
             }
